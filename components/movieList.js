@@ -4,45 +4,19 @@ class MovieList extends React.Component {
 constructor(props) {
 super(props);
 this.state = {
-    movies: [
-        {
-          name:"Sagan om ringen",
-          genre:["Action"],
-          age:11,
-          rating:8
-        },
-        {
-          name:"Shawshank redemption",
-          genre:["Drama"],
-          age:11,
-          rating:9
-        },
-        {
-          name:"Toy story",
-          genre:["Animation"],
-          age:3,
-          rating:6,
-        },
-        {
-          name:"Superhjältarna 2",
-          genre:["Animation"],
-          age:3,
-          rating:5
-        },
-        {
-          name:"Shutter Island",
-          genre:["Thriller","Action"],
-          age:15,
-          rating:7
-        },
-        {
-          name:"Deadpool",
-          genre:["Comedy","Action"],
-          age:11,
-          rating:4,
-        }
-      ]
+    movies: [],
     }
+}
+
+componentDidMount(){
+  fetch("http://localhost:3000/api/movies")
+  .then(response => response.json())
+  .then(json=> 
+    this.setState({
+      movies:json
+    })
+
+  )
 }
 
 deleteCard(index){
@@ -63,9 +37,9 @@ return (
 <div>
     <h2>Our top movies</h2>
     <div>
-        <ul>{movies.map((data, index) => 
+        <ul>{movies.map((data, index) =>
         <li key={index}>
-                <span 
+                <span
                 onClick={(event) => {
                     event.stopPropagation();
                     event.preventDefault();

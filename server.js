@@ -15,21 +15,18 @@ const server = express()
 
 server.get('/api', (req, res) => {
     console.log(req.url)
-    res.send("alot of information that we want to share with the world")    
+    res.send("alot of information that we want to share with the world")
 })
 
 server.get('/api/movies', (req, res) => {
     console.log(req.url)
-    
 
-    res.send(obj)
-    
-    // let list = "movielist.json"
-    // res.send(JSON.stringify(obj))
-    // fs.readFile(__dirname + "/api/"+ list, "utf8", function(err,data) {
-    //     res.send(JSON.stringify(data));
-    //     res.end(data);
-    // })
+    console.log(obj)
+    res.setHeader('Content-Type', 'application/json');
+
+    res.send(JSON.stringify(obj))
+
+
 })
 
 server.get('/addmovie', (req, res) => {

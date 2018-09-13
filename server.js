@@ -1,6 +1,8 @@
 const express = require('express')
 const next = require('next')
+const fs = require("fs")
 
+let obj = require("./api/movielist.js")
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
@@ -12,8 +14,22 @@ app.prepare()
 const server = express()
 
 server.get('/api', (req, res) => {
-    console.log(req.url);
+    console.log(req.url)
     res.send("alot of information that we want to share with the world")    
+})
+
+server.get('/api/movies', (req, res) => {
+    console.log(req.url)
+    
+
+    res.send(obj)
+    
+    // let list = "movielist.json"
+    // res.send(JSON.stringify(obj))
+    // fs.readFile(__dirname + "/api/"+ list, "utf8", function(err,data) {
+    //     res.send(JSON.stringify(data));
+    //     res.end(data);
+    // })
 })
 
 server.get('/addmovie', (req, res) => {

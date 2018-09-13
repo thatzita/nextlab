@@ -1,0 +1,78 @@
+body{
+    margin:0;
+   }
+   
+   a {
+    margin:0px;
+    margin-left:20px;
+    font-size:18px;
+    color:black;
+    text-decoration:none;
+   }
+   
+   /*
+    Search styles
+   */
+   .searchDiv{
+    display:flex;
+    justify-content:left;
+    margin-top:5px;
+   }
+   
+   
+   .searchDivChild1{
+    border-top:4px solid black;
+    width:17%;
+    border-radius:6px 0
+   }
+   
+   
+   .searchDivChild2 {
+    border-left:3px solid black;
+    position:relative;
+    left:16px;
+    transform:skew(40deg);
+    z-index:2
+   }
+   
+   
+   .inpDiv{
+    width:40%;
+    position:relative;
+    left:35px;
+   }
+   
+   .inputStyle{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-bottom:1px solid black;
+   
+    font-size:1.4em;
+    text-align:center;
+   }
+   
+   
+   
+   .searchBtn {
+   
+      border-radius:50px 0px;
+      border-right:20px solid black;
+      border-left:15px solid black;
+      border-top:none;
+      border-bottom:none;
+      width:150px;
+      background:white;
+      color:rgba(0,0,0,0.8);
+      position:relative;
+      font-size:1em;
+      padding:10px;
+      cursor:pointer;
+      z-index:3;
+   
+   }
+   
+   
+   
+   /* List styles
+   */

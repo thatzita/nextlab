@@ -13,8 +13,13 @@ const server = express()
 
 server.get('/api', (req, res) => {
     console.log(req.url);
-    res.send("alot of information that we want to share with the world")
-    
+    res.send("alot of information that we want to share with the world")    
+})
+
+server.get('/addmovie', (req, res) => {
+    console.log(req.url);
+    const page = "/addmovie";
+    app.render(req,res,page)
 })
 
 server.get('*', (req, res) => {

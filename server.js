@@ -19,13 +19,9 @@ server.get('/api', (req, res) => {
 })
 
 server.get('/api/movies', (req, res) => {
-    console.log(req.url)
-
-    console.log(obj)
+    
     res.setHeader('Content-Type', 'application/json');
-
     res.send(JSON.stringify(obj))
-
 
 })
 

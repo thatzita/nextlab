@@ -4,7 +4,7 @@ const fs = require("fs")
 
 const movies = require("./api/movieFunction.js")
 
-let obj = require("./api/movielist.js")
+let obj = require("./api/movielistJSON.json")
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
@@ -49,8 +49,12 @@ server.post("/addmovie/newmovie", (req, res) => {
         });
 
         req.on('end', function () {
-            console.log(jsonString);
-            obj.push(jsonString)
+           let newMovieList = obj
+            newMovieList.push(JSON.parse(jsonString));
+            
+            fs.writeFile("./api/movielistJSON.json", JSON.stringify(newMovieList), () => {
+                console.log("Done");
+            })
             res.send(JSON.parse(jsonString))
         });
     }

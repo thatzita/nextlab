@@ -1,4 +1,5 @@
-const movieObj = require("./movielist.js");
+const movieObj = require("./movielistJSON.json");
+
 
 function queryMoviesInfo(genre, rating){
     if(genre !== undefined && rating !== undefined){
@@ -25,9 +26,11 @@ function filterMoviesByGenreAndRating(genre, rating){
 }
 
 function filterMoviesByGenre(genre, rating){
+    
     // console.log(genre)
     let filtered = []    
-    let obj = movieObj;  
+    let obj = movieObj;
+    
 
     obj.forEach(function(data){
         if(data.genre.length > 1){

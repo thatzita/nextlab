@@ -16,7 +16,6 @@ componentDidMount(){
       movies:json
     })
   )
-
 }
 
 deleteCard(index){

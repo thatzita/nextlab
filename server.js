@@ -40,6 +40,23 @@ server.get('/addmovie', (req, res) => {
     app.render(req,res,page)
 })
 
+server.post("/addmovie/newmovie", (req, res) => {
+    if (req.method == 'POST') {
+        var jsonString = '';
+
+        req.on('data', function (data) {
+            jsonString += data;
+        });
+
+        req.on('end', function () {
+            console.log(jsonString);
+            obj.push(jsonString)
+            res.send(JSON.parse(jsonString))
+        });
+    }
+    
+})
+
 server.get('*', (req, res) => {
     return handle(req, res)
 })

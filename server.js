@@ -2,6 +2,8 @@ const express = require('express')
 const next = require('next')
 const fs = require("fs")
 
+const movies = require("./api/movieFunction.js")
+
 let obj = require("./api/movielist.js")
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -15,17 +17,19 @@ const server = express()
 
 server.get('/api', (req, res) => {
     console.log(req.url)
-    res.send("alot of information that we want to share with the world")
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(obj));
+
 })
 
 server.get('/api/movies', (req, res) => {
-    console.log(req.url)
+    let genre = req.query.genre;
+    let filteredMovies = movies.filterMovies(genre);
+    // console.log("query " + genre);
+    // console.log(filteredMovies);
 
-    console.log(obj)
     res.setHeader('Content-Type', 'application/json');
-
-    res.send(JSON.stringify(obj))
-
+    res.send(JSON.stringify(filteredMovies));
 
 })
 

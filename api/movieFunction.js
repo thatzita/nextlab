@@ -1,7 +1,32 @@
 const movieObj = require("./movielist.js");
 
+function queryMoviesInfo(genre, rating){
+    let lowerCaseGenre = genre.toLowerCase();
+    if(lowerCaseGenre !== undefined && rating !== undefined){
+        return filterMoviesByGenreAndRating(lowerCaseGenre,rating);
+    }else if(lowerCaseGenre !== undefined && rating === undefined){
+       return filterMoviesByGenre(lowerCaseGenre);
+    }else if(lowerCaseGenre === undefined && rating !== undefined){
+        return filterMoviesByRating(rating);
+    }
+}
 
-function filterMovies(genre){
+function filterMoviesByGenreAndRating(genre, rating){
+    // console.log(genreList)
+    let genreList = filterMoviesByGenre(genre);
+    let filtered = [];
+
+    genreList.forEach(function(data){
+        if(data.rating >= rating){
+            filtered.push(data);
+        }
+    });
+
+    return filtered;
+}
+
+function filterMoviesByGenre(genre, rating){
+    // console.log(genre)
     let filtered = []    
     let obj = movieObj;  
 
@@ -19,4 +44,17 @@ function filterMovies(genre){
     return filtered;
 }
 
-module.exports = { filterMovies }
+function filterMoviesByRating(rating){
+    // console.log(rating)
+    let filtered = []    
+    let obj = movieObj;  
+
+    obj.forEach(function(data){
+        if(data.rating >= rating){
+            filtered.push(data);
+        }
+    })
+    return filtered;
+}
+
+module.exports = { queryMoviesInfo }

@@ -15,26 +15,26 @@ app.prepare()
 .then(() => {
 const server = express()
 
+//Initial fetch, get all movies
 server.get('/api', (req, res) => {
-    console.log(req.url)
+    // console.log(req.url)
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(obj));
-
 })
 
+//fetching with querystring for certain movies
 server.get('/api/movies', (req, res) => {
     let genre = req.query.genre;
-    let filteredMovies = movies.filterMovies(genre);
-    // console.log("query " + genre);
+    let rating = req.query.rating;
+    let filteredMovies = movies.queryMoviesInfo(genre, rating);
     // console.log(filteredMovies);
-
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(filteredMovies));
-
 })
 
+//Add movie to list page
 server.get('/addmovie', (req, res) => {
-    console.log(req.url);
+    // console.log(req.url);
     const page = "/addmovie";
     app.render(req,res,page)
 })

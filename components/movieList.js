@@ -9,7 +9,7 @@ this.state = {
 }
 
 componentDidMount(){
-  fetch("http://localhost:3000/api")
+  fetch("http://localhost:3000/api/")
   .then(response => response.json())
   .then(json=> 
     this.setState({

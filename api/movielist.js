@@ -1,7 +1,7 @@
 let obj = [{
     name: "The Road Warrior",
     genre: [
-      "Action"
+      "action"
     ],
     year: 1981,
     rating: 8
@@ -9,7 +9,7 @@ let obj = [{
   {
     name: "Aliens",
     genre: [
-      "Action"
+      "action"
     ],
     year: 1986,
     rating: 10
@@ -17,7 +17,7 @@ let obj = [{
   {
     name: "Die Hard",
     genre: [
-      "Action"
+      "action"
     ],
     year: 1988,
     rating: 7
@@ -25,7 +25,7 @@ let obj = [{
   {
     name: "Terminator 2: Judgment Day",
     genre: [
-      "Action"
+      "action"
     ],
     year: 1991,
     rating: 4
@@ -33,7 +33,7 @@ let obj = [{
   {
     name: "Casino Royale",
     genre: [
-      "Action"
+      "action"
     ],
     year: 2006,
     rating: 6
@@ -41,8 +41,8 @@ let obj = [{
   {
     name: "Shutter Island",
     genre: [
-      "Thriller",
-      "Action"
+      "thriller",
+      "action"
     ],
     year: 2010,
     rating: 7
@@ -50,8 +50,8 @@ let obj = [{
   {
     name: "Deadpool",
     genre: [
-      ["Comedy"],
-      "Action"
+      ["comedy"],
+      "action"
     ],
     year: 2016,
     rating: 4
@@ -59,7 +59,7 @@ let obj = [{
   {
     name: "Snow White and the Seven Dwarfs ",
     genre: [
-      "Animated"
+      "animated"
     ],
     year: 1937,
     rating: 7
@@ -67,7 +67,7 @@ let obj = [{
   {
     name: "Fantasia",
     genre: [
-      "Animated"
+      "animated"
     ],
     year: 1940,
     rating: 2
@@ -75,7 +75,7 @@ let obj = [{
   {
     name: "Beauty and the Beast",
     genre: [
-      "Animated"
+      "animated"
     ],
     year: 1991,
     rating: 4
@@ -83,8 +83,8 @@ let obj = [{
   {
     name: "Toy Story",
     genre: [
-      "Animated",
-      "Comedy"
+      "animated",
+      "comedy"
     ],
     year: 1995,
     rating: 5
@@ -92,128 +92,128 @@ let obj = [{
   {
     name: "Spirited Away",
     genre: [
-      "Animated"
+      "animated"
     ],
     year: 2001,
     rating: 8
   },
   {
     name: "Psycho",
-    genre: ["Horror"],
+    genre: ["horror"],
     year: 1960,
     rating: 9
   },
   {
     name: "The Exorcist",
-    genre: ["Horror"],
+    genre: ["horror"],
     year: 1973,
     rating: 10
   },
   {
     name: "Halloween",
-    genre: ["Horror"],
+    genre: ["horror"],
     year: 1978,
     rating: 5
   },
   {
     name: "The Shining",
-    genre: ["Horror"],
+    genre: ["horror"],
     year: 1980,
     rating: 9
   },
   {
     name: "The Sixth Sense ",
-    genre: ["Horror"],
+    genre: ["horror"],
     year: 1999,
     rating: 4
   },
   {
     name: "Duck Soup",
-    genre: ["Comedy"],
+    genre: ["comedy"],
     year: 1933,
     rating: 2
   },
   {
     name: "Some Like It Hot",
-    genre: ["Comedy"],
+    genre: ["comedy"],
     year: 1959,
     rating: 1
   },
   {
     name: "Dr. Strangelove, Or:...",
-    genre: ["Comedy"],
+    genre: ["comedy"],
     year: 1964,
     rating: 4
   },
   {
     name: "Monty Python and the Holy Grail ",
-    genre: ["Comedy"],
+    genre: ["comedy"],
     year: 1975,
     rating: 7
   },
   {
     name: "Airplane!",
-    genre: ["Comedy"],
+    genre: ["comedy"],
     year: 1980,
     rating: 8
   },
   {
     name: "Rear Window",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     year: 1954,
     rating: 3
   },
   {
     name: "Vertigo",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     year: 1958,
     rating: 1
   },
   {
     name: "Jaws",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     year: 1975,
     rating: 8
   },
   {
     name: "The Silence of the Lambs",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     year: 1991,
     rating: 6
   },
   {
     name: "No Country For Old Men",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     year: 2007,
     rating: 9
   },
   {
     name: "Citizen Kane",
-    genre: ["Drama"],
+    genre: ["drama"],
     year: 1941,
     rating: 5
   },
   {
     name: "It's A Wonderful Life",
-    genre: ["Drama"],
+    genre: ["drama"],
     year: 1946,
     rating: 10
   },
   {
     name: "All About Eve",
-    genre: ["Drama"],
+    genre: ["drama"],
     year: 1950,
     rating: 1
   },
   {
     name: "On The Waterfront",
-    genre: ["Drama"],
+    genre: ["drama"],
     year: 1954,
     rating: 3
   },
   {
     name: "The Shawshank Redemption",
-    genre: ["Drama"],
+    genre: ["drama"],
     year: 1994,
     rating: 10
   }

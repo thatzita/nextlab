@@ -2,6 +2,8 @@ const express = require('express')
 const next = require('next')
 const fs = require("fs")
 
+const movies = require("./api/movieFunction.js")
+
 let obj = require("./api/movielist.js")
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -13,20 +15,27 @@ app.prepare()
 .then(() => {
 const server = express()
 
+//Initial fetch, get all movies
 server.get('/api', (req, res) => {
-    console.log(req.url)
-    res.send("alot of information that we want to share with the world")
-})
-
-server.get('/api/movies', (req, res) => {
-    
+    // console.log(req.url)
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(obj))
-
+    res.send(JSON.stringify(obj));
 })
 
+//fetching with querystring for certain movies
+server.get('/api/movies', (req, res) => {
+
+    let genre = req.query.genre;
+    let rating = req.query.rating;
+    let filteredMovies = movies.queryMoviesInfo(genre, rating);
+    // console.log(filteredMovies);
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(filteredMovies));
+})
+
+//Add movie to list page
 server.get('/addmovie', (req, res) => {
-    console.log(req.url);
+    // console.log(req.url);
     const page = "/addmovie";
     app.render(req,res,page)
 })

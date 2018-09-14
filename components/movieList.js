@@ -9,14 +9,14 @@ this.state = {
 }
 
 componentDidMount(){
-  fetch("http://localhost:3000/api/movies")
+  fetch("http://localhost:3000/api/")
   .then(response => response.json())
   .then(json=>
     this.setState({
       movies:json
     })
-
   )
+
 }
 
 deleteCard(index){
@@ -50,7 +50,8 @@ return (
                     this.deleteCard(index);
                 }}>X</span>
                 <h3>{data.name}</h3>
-                {/* <p>{data.genre}</p> */}
+                <p>Genre: {data.genre}</p>
+                <p>Release year: {data.year}</p>
                 <p><strong>Rating:</strong> {data.rating}</p>
             </li>)}
         </ul>

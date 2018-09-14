@@ -11,7 +11,7 @@ this.state = {
 componentDidMount(){
   fetch("http://localhost:3000/api/")
   .then(response => response.json())
-  .then(json=> 
+  .then(json=>
     this.setState({
       movies:json
     })
@@ -33,8 +33,12 @@ movieData.forEach((data)=>{
     movies.push(data);
 });
 
+let style = {
+  display:"flex",
+  justifyContent:"center",
+}
 return (
-<div>
+<div style={style}>
     <h2>Our top movies</h2>
     <div>
         <ul>{movies.map((data, index) =>

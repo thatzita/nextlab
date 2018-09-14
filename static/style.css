@@ -1,7 +1,7 @@
 body{
     margin:0;
    }
-   
+
    a {
     margin:0px;
     margin-left:20px;
@@ -9,7 +9,7 @@ body{
     color:black;
     text-decoration:none;
    }
-   
+
    /*
     Search styles
    */
@@ -18,15 +18,15 @@ body{
     justify-content:left;
     margin-top:5px;
    }
-   
-   
+
+
    .searchDivChild1{
     border-top:4px solid black;
     width:17%;
     border-radius:6px 0
    }
-   
-   
+
+
    .searchDivChild2 {
     border-left:3px solid black;
     position:relative;
@@ -34,28 +34,28 @@ body{
     transform:skew(40deg);
     z-index:2
    }
-   
-   
+
+
    .inpDiv{
     width:40%;
     position:relative;
     left:35px;
    }
-   
+
    .inputStyle{
     width:100%;
     padding:10px;
     border:none;
     border-bottom:1px solid black;
-   
+
     font-size:1.4em;
     text-align:center;
    }
-   
-   
-   
+
+
+
    .searchBtn {
-   
+
       border-radius:50px 0px;
       border-right:20px solid black;
       border-left:15px solid black;
@@ -69,10 +69,98 @@ body{
       padding:10px;
       cursor:pointer;
       z-index:3;
-   
+
    }
-   
-   
-   
+
+    /*
+      categories search
+    */
+
+    .categories {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+
+    }
+
+    .categories h4{
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+   /*
+     genre search
+   */
+
+  .genre {
+    width:5%;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .genre:hover > ul{
+    display: flex;
+  }
+
+
+
+  .genre ul {
+    list-style: none;
+    position: absolute;
+    left:10px;
+    top:40px;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+  }
+
+  .genre ul li:hover{
+    background: red;
+  }
+
+/* Rating search
+*/
+
+  .rating{
+    width:5%;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+  }
+
+  .rating:hover > ul{
+    display: flex;
+  }
+
+  .rating ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top:40px;
+    left:10px;
+
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+  }
+
+  .rating ul li {
+      text-align: left;
+      padding: 0px 40px 0px;
+  }
+
+  .rating ul li:hover{
+    background: red;
+  }
+
    /* List styles
    */

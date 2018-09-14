@@ -13,8 +13,9 @@ class Search extends React.Component {
       search: "",
       genreClick:false,
       ratingClick:false,
-      currentGenreList:[],
-      changeCurrentGenre:false
+      currentGenre:"nogenre",
+      changeCurrentGenre:false,
+      currentRate:"any",
     }
  }
 
@@ -42,48 +43,58 @@ class Search extends React.Component {
    }
  }
 
-addToArrayState(name){
+// addToArrayState(name){
+//
+//   let newList = this.state.currentGenreList.filter(x => name === x)
+//
+//
+//   //Om den inte finns så ska den lägga till den i listan
+//   if(!newList[0]){
+//     console.log("den finns inte så då ska den läggas till i listan")
+//       this.setState({
+//          currentGenreList: [
+//            ...this.state.currentGenreList,
+//            name
+//          ]
+//        })
+//
+//   }else{
+//
+//     let newListOneElementRemoved = this.state.currentGenreList.filter(x => name !==x)
+//     this.setState({
+//        currentGenreList: [
+//          ...newListOneElementRemoved
+//        ]
+//      })
+//       console.log("den finns redan i listan")
+//   }
+//
+//
+//
+//
+//
+// }
 
-  let newList = this.state.currentGenreList.filter(x => name === x)
-
-
-  //Om den inte finns så ska den lägga till den i listan
-  if(!newList[0]){
-    console.log("den finns inte så då ska den läggas till i listan")
-      this.setState({
-         currentGenreList: [
-           ...this.state.currentGenreList,
-           name
-         ]
-       })
-
-  }else{
-
-    let newListOneElementRemoved = this.state.currentGenreList.filter(x => name !==x)
-    this.setState({
-       currentGenreList: [
-         ...newListOneElementRemoved
-       ]
-     })
-      console.log("den finns redan i listan")
-  }
-
-
-
-
-
+currentGenre(name){
+  // if(prevGenre === name){
+  //   prevGenre = ""
+  // }else{
+  //
+  //   this.addToArrayState(name)
+  //
+  //   prevGenre = name;
+  // }
+  this.setState({
+    currentGenre:name
+  })
 }
 
-checkPreviousGenre(name){
-  if(prevGenre === name){
-    prevGenre = ""
-  }else{
 
-    this.addToArrayState(name)
-    prevGenre = name;
-  }
+currentRate(name){
+  this.setState({
+    currentRate:name
+  })
 }
-
 
  addGenre(name){
 
@@ -93,23 +104,31 @@ checkPreviousGenre(name){
    switch (name) {
      case "action":
 
-        this.checkPreviousGenre(name)
+        this.currentGenre(name)
 
        break;
     case "drama":
-        this.checkPreviousGenre(name)
+
+        this.currentGenre(name)
 
       break;
-    case "animation":
-        this.checkPreviousGenre(name)
+      case "animated":
+        this.currentGenre(name)
         break;
     case "thriller":
-        this.checkPreviousGenre(name)
+        this.currentGenre(name)
 
       break;
-    case "comedy":
-        this.checkPreviousGenre(name)
+      case "horror":
+     this.currentGenre(name)
 
+   break;
+    case "comedy":
+        this.currentGenre(name)
+
+      break;
+    case "nogenre":
+      this.currentGenre(name)
       break;
      default:
 
@@ -117,23 +136,73 @@ checkPreviousGenre(name){
  }
 
 
+addRate(name){
+
+        switch (name) {
+        case "any":
+
+          this.currentRate(name)
+
+          break;
+        case 1:
+
+        this.currentRate(name)
+
+          break;
+        case 2:
+          this.currentRate(name)
+          break;
+        case 3:
+          this.currentRate(name)
+
+          break;
+        case 4:
+          this.currentRate(name)
+
+          break;
+        case 5:
+          this.currentRate(name)
+
+          break;
+        case 6:
+          this.currentRate(name)
+          break;
+        case 7:
+          this.currentRate(name)
+          break;
+        case 8:
+          this.currentRate(name)
+          break;
+        case 9:
+          this.currentRate(name)
+          break;
+        case 10:
+          this.currentRate(name)
+          break;
+        default:
+
+     }
+}
+
 componentDidUpdate(){
-  console.log(this.state.currentGenreList)
+  console.log(this.state.currentGenre)
+  console.log(this.state.currentRate)
+
 }
  render(){
 
-let handleChange = event => {
-  this.setState({
-    search: event.target.value
-  })
-}
+  let handleChange = event => {
+    this.setState({
+      search: event.target.value
+    })
+  }
 
-let handleClick = event => {
-  console.log(this.state.search);
-}
+  let handleClick = event => {
+    console.log(this.state.search);
+  }
 
 
-   return (
+  return (
      <div>
        <div className={css.searchDiv}>
          <div className={css.searchDivChild1}>
@@ -154,30 +223,33 @@ let handleClick = event => {
          <h4  onClick={e => this.genreClick()}>Genre</h4>
          {this.state.genreClick ?
            <ul>
-            <li onClick={e=>this.addGenre("action")}>
-              <label htmlFor="action">Action</label>
-              <input type="checkbox" id="action"/>
-            </li>
-            <li onClick={e=>this.addGenre("drama")}>
-              <label htmlFor="drama" >Drama</label>
-              <input type="checkbox" id="drama"/>
-            </li>
-            <li onClick={e=>this.addGenre("animation")}>
-              <label htmlFor="animation">Animation</label>
-              <input type="checkbox" id="animation"/>
-            </li>
-            <li onClick={e=>this.addGenre("thriller")}>
-              <label htmlFor="thriller">Thriller</label>
-              <input type="checkbox" id="thriller"/>
-            </li>
-            <li onClick={e=>this.addGenre("comedy")}>
-              <label htmlFor="comedy">Comedy</label>
-              <input type="checkbox" id="comedy"/>
-            </li>
-
-
-           </ul>
-
+                  <form>
+                  <li onClick={e=>this.addGenre("nogenre")}>
+                    <label htmlFor="nogenre">No genre</label>
+                    <input type="radio" id="nogenre"  defaultChecked name="selection"/>
+                  </li>
+                 <li onClick={e=>this.addGenre("action")}>
+                   <label htmlFor="action">Action</label>
+                   <input type="radio" id="action" name="selection"/>
+                 </li>
+                 <li onClick={e=>this.addGenre("drama")}>
+                   <label htmlFor="drama" >Drama</label>
+                   <input type="radio" id="drama" name="selection"/>
+                 </li>
+                 <li onClick={e=>this.addGenre("animated")}>
+                   <label htmlFor="animation">Animation</label>
+                   <input type="radio" id="animation" name="selection"/>
+                 </li>
+                 <li onClick={e=>this.addGenre("thriller")}>
+                   <label htmlFor="thriller">Thriller</label>
+                   <input type="radio" id="thriller" name="selection"/>
+                 </li>
+                 <li onClick={e=>this.addGenre("comedy")}>
+                   <label htmlFor="comedy">Comedy</label>
+                   <input type="radio" id="comedy" name="selection"/>
+                 </li>
+                 </form>
+                </ul>
            :
            <span></span>
 
@@ -191,16 +263,52 @@ let handleClick = event => {
 
          {this.state.ratingClick ?
            <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
+            <form>
+              <li  onClick={e=>this.addRate("any")}>
+                <label htmlFor="noRate">Any</label>
+                <input type="radio" id="noRate"  defaultChecked name="selection"/>
+                </li>
+              <li onClick={e=>this.addRate(1)}>
+                <label htmlFor="one">1</label>
+                <input type="radio" id="one"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(2)}>
+                <label htmlFor="two">2</label>
+                <input type="radio" id="two"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(3)}>
+                <label htmlFor="three">3</label>
+                <input type="radio" id="three"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(4)}>
+                <label htmlFor="four">4</label>
+                <input type="radio" id="four"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(5)}>
+                <label htmlFor="five">5</label>
+                <input type="radio" id="five"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(6)}>
+                <label htmlFor="six">6</label>
+                <input type="radio" id="six"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(7)}>
+                <label htmlFor="seven">7</label>
+                <input type="radio" id="seven"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(8)}>
+                <label htmlFor="eight">8</label>
+                <input type="radio" id="eight"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(9)}>
+                <label htmlFor="nine">9</label>
+                <input type="radio" id="nine"   name="selection"/>
+              </li>
+              <li onClick={e=>this.addRate(10)}>
+                <label htmlFor="ten">10</label>
+                <input type="radio" id="ten"   name="selection"/>
+              </li>
+            </form>
            </ul>
            :
            <span></span>

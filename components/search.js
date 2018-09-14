@@ -198,7 +198,32 @@ componentDidUpdate(){
   }
 
   let handleClick = event => {
-    console.log(this.state.search);
+    let url = "http://localhost:3000/api"
+    let urlMovies = url + "/movies"
+    if (this.state.currentGenre === "nogenre" && this.state.currentRate === "any") {
+
+      fetch(url).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+
+    } else if (this.state.currentGenre === "nogenre") {
+
+      fetch(urlMovies + "?rating=" + this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+
+    } else if (this.state.currentRate === "any") {
+      console.log(urlMovies + "?genre=" + this.state.currentGenre)
+      fetch(urlMovies + "?genre=" + this.state.currentGenre).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+
+    } else {
+      fetch(urlMovies + "?genre=" + this.state.currentGenre + "&rating=" + this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+
+    }
   }
 
 

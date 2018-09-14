@@ -216,6 +216,36 @@ let obj = [{
     genre: ["drama"],
     year: 1994,
     rating: 10
+  },
+{
+  name: "The Godfather",
+  genre: ["drama"],
+  year:1972,
+  rating: 9
+  },
+  {
+    name: "The Godfather: Part II",
+    genre: ["drama"],
+    year: 1974,
+    rating:9
+  },
+  {
+    name: "The Dark Knight",
+    genre: ["drama", "action"],
+    year: 2008,
+    rating:8
+  },
+  {
+    name: "Fight Club",
+    genre: ["drama"],
+    year: 1999,
+    rating:8
+  },
+  {
+    name: "The Usual Suspects",
+    genre: ["drama"],
+    year: 1995,
+    rating:7
   }
 ]
 

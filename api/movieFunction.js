@@ -1,12 +1,11 @@
 const movieObj = require("./movielist.js");
 
 function queryMoviesInfo(genre, rating){
-    let lowerCaseGenre = genre.toLowerCase();
-    if(lowerCaseGenre !== undefined && rating !== undefined){
-        return filterMoviesByGenreAndRating(lowerCaseGenre,rating);
-    }else if(lowerCaseGenre !== undefined && rating === undefined){
-       return filterMoviesByGenre(lowerCaseGenre);
-    }else if(lowerCaseGenre === undefined && rating !== undefined){
+    if(genre !== undefined && rating !== undefined){
+        return filterMoviesByGenreAndRating(genre, rating);
+    }else if(genre !== undefined && rating === undefined){
+       return filterMoviesByGenre(genre);
+    }else if(genre === undefined && rating !== undefined){
         return filterMoviesByRating(rating);
     }
 }

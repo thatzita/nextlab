@@ -10,7 +10,7 @@ class Search extends React.Component {
  constructor(props) {
  super(props);
     this.state = {
-      search: "",
+      text: "",
       genreClick:false,
       ratingClick:false,
       currentGenre:"nogenre",
@@ -193,36 +193,61 @@ componentDidUpdate(){
 
   let handleChange = event => {
     this.setState({
-      search: event.target.value
+      text: event.target.value
     })
   }
 
   let handleClick = event => {
     let url = "http://localhost:3000/api"
-    let urlMovies = url + "/movies"
-    if (this.state.currentGenre === "nogenre" && this.state.currentRate === "any") {
+    let urlMovies = url + "/movies";
+    console.log(this.state.text)
+
+    //Om inget är ikryssat eller skrivit i sökfältet
+    if (this.state.currentGenre === "nogenre" && this.state.currentRate === "any" && this.state.text === "") {
 
       fetch(url).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
         console.log(res)
       })
 
-    } else if (this.state.currentGenre === "nogenre") {
+      //Om de bara finns en currentRate ikryssad
+    }else if (this.state.currentGenre === "nogenre" && this.state.text === "" ) {
 
-      fetch(urlMovies + "?rating=" + this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?rating=" + this.state.currentRate ).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
         console.log(res)
       })
 
-    } else if (this.state.currentRate === "any") {
-      console.log(urlMovies + "?genre=" + this.state.currentGenre)
+      //om de bara finns en genre ikryssad
+    } else if (this.state.currentRate === "any" && this.state.text === "") {
+      console.log("hej")
+      // console.log(urlMovies + "?genre=" + this.state.currentGenre)
       fetch(urlMovies + "?genre=" + this.state.currentGenre).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log("Felmeddelande " +res)
+      })
+      // Om bara sökfunktionen som är inskriven.
+    } else if(this.state.currentRate === "any" && this.state.text !== "" && this.state.currentGenre === "nogenre"){
+      fetch(urlMovies + "?text=" + this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
         console.log(res)
       })
-
-    } else {
-      fetch(urlMovies + "?genre=" + this.state.currentGenre + "&rating=" + this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      // Om bara sökfunktionen och rating finns med
+    }else if(this.state.currentGenre === "nogenre" && this.state.text !== "" ){
+      fetch(urlMovies + "?rating=" + this.state.currentRate+ "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
         console.log(res)
       })
+      //Om bara sökfunktionen och genre finns med
+    }else if(this.state.currentRate === "any" && this.state.text !== "" ){
 
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+ "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+      //Om alla finns med
+    }else if(this.state.text === "" && this.state.currentRate !== "any" && this.state.currentGenre !== "nogenre"){
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
+    }else if(this.state.text !== ""){
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate + "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+        console.log(res)
+      })
     }
   }
 

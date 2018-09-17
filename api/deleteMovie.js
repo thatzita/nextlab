@@ -1,12 +1,14 @@
-const movieObj = require("./movielistJSON.json");
+// const movieObj = require("./movielistJSON.json");
 
-function removeMovie(name){
-    let oldMovieList = movieObj;
-
-    let filteredMovieList = oldMovieList.filter(function(data) {
+function removeMovie(name, fs){
+    // let oldMovieList = movieObj;
+    let datan = fs.readFileSync("./api/movielistJSON.json", "utf8");
+    console.log(datan)
+    let datanObj = JSON.parse(datan)
+    let filteredMovieList = datanObj.filter(function(data) {
         return data.name !== name;
     })
-    return filteredMovieList  
+    return filteredMovieList
 }
 
 module.exports = { removeMovie }

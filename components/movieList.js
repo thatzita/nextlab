@@ -9,16 +9,23 @@ this.state = {
 }
 
 componentDidMount(){
+
+  console.log("componentDidMount")
   fetch("http://localhost:3000/api/")
   .then(response => response.json())
-  .then(json=>
+  .then(json=> {
     this.setState({
       movies:json
     })
+    console.log(json)
+    }
   )
 }
 
 deleteCard(index, data){
+
+  console.log("deleteCard")
+
   console.log(index);
   console.log(data.name);
   console.log(data.year);
@@ -26,7 +33,7 @@ deleteCard(index, data){
   fetch(url+"?name="+data.name)
   .then(response => response.text())
   .then(text => console.log(text))
-  
+
 this.setState(prevState => ({
     movies: [...prevState.movies.slice(0, index), ...prevState.movies.slice(index + 1)]
 }))

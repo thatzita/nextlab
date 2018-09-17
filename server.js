@@ -19,8 +19,10 @@ const server = express()
 //Initial fetch, get all movies
 server.get('/api', (req, res) => {
     // console.log(req.url)
+    let datan = fs.readFileSync('./api/movielistJSON.json', "utf8")
+
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(obj));
+    res.send(datan);
 })
 
 //fetching with querystring for certain movies
@@ -50,9 +52,10 @@ server.post("/addmovie/newmovie", (req, res) => {
         });
 
         req.on('end', function () {
-           let newMovieList = obj
+           let newMovieList = JSON.parse(fs.readFileSync("./api/movielistJSON.json", "utf8"));
+
             newMovieList.push(JSON.parse(jsonString));
-            
+
             fs.writeFile("./api/movielistJSON.json", JSON.stringify(newMovieList), () => {
                 console.log("Done, movie added");
             })
@@ -67,8 +70,9 @@ server.get("/api/delete", (req, res) => {
     let name = req.query.name;
     // console.log(name);
 
-    let removeMovieFromFile = deleteMovie.removeMovie(name);
+    let removeMovieFromFile = deleteMovie.removeMovie(name, fs);
     // console.log(removeMovieFromFile)
+
 
     fs.writeFile("./api/movielistJSON.json", JSON.stringify(removeMovieFromFile), () => {
         console.log("Removed from DB");

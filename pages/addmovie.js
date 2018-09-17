@@ -2,34 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/nav'
+import AddMovie from '../components/addMovieToList'
 
 
 export default () => (
     <div className="hero">
         <Head />
         <Nav />
-        <h1 className="title">ADD MOVIE</h1>
-        <p className="description">
-        Add your favorite movie to the collection.
-      </p>
+        <AddMovie />
       
-    <div className="addContent">
-    <label>Title</label>
-    <input type="text" id="mTitle" name="movie" placeholder="Movie name..." />
-
-    <label>Description</label>
-    <textarea className="descStyled" placeholder="The movie is about..." cols="30" rows="5"></textarea>
-
-    <label>Rating</label>
-    <select id="rating" name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-  
-    <input type="submit" value="Add movie" />
-    </div>
 
         <style jsx>{`
       .hero {
@@ -56,7 +37,7 @@ export default () => (
         border-radius: 4px;
         box-sizing: border-box;
     }
-    
+
     input[type=submit] {
         width: 50%;
         background-color: #067df7;

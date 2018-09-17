@@ -36,7 +36,7 @@
   "year": 2016,
   "rating": 4
 }, {
-  "name": "Snow White and the Seven Dwarfs ",
+  "name": "Snow White and the Seven Dwarfs",
   "genre": ["animated"],
   "year": 1937,
   "rating": 7
@@ -81,7 +81,7 @@
   "year": 1980,
   "rating": 9
 }, {
-  "name": "The Sixth Sense ",
+  "name": "The Sixth Sense",
   "genre": ["horror"],
   "year": 1999,
   "rating": 4
@@ -101,7 +101,7 @@
   "year": 1964,
   "rating": 4
 }, {
-  "name": "Monty Python and the Holy Grail ",
+  "name": "Monty Python and the Holy Grail",
   "genre": ["comedy"],
   "year": 1975,
   "rating": 7
@@ -185,11 +185,6 @@
   "genre": ["drama"],
   "year": 1995,
   "rating": 7
-}, {
-  "name": "THATZITA OCH HACKERMAN LEKER I SKOGEN, EN DÖR (och det är inte HACKERMAN som dör).",
-  "genre": ["thriller", "comedy"],
-  "year": 2020,
-  "rating": 10
 }, {
   "name": "Iron Sky",
   "genre": ["action", "comedy"],

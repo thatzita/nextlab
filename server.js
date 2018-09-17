@@ -30,7 +30,7 @@ server.get('/api/movies', (req, res) => {
 
     let genre = req.query.genre;
     let rating = req.query.rating;
-    let filteredMovies = movies.queryMoviesInfo(genre, rating);
+    let filteredMovies = movies.queryMoviesInfo(genre, rating, fs);
     // console.log(filteredMovies);
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(filteredMovies));

@@ -18,7 +18,15 @@ componentDidMount(){
   )
 }
 
-deleteCard(index){
+deleteCard(index, data){
+  console.log(index);
+  console.log(data.name);
+  console.log(data.year);
+  let url = "http://localhost:3000/api/delete";
+  fetch(url+"?name="+data.name)
+  .then(response => response.text())
+  .then(text => console.log(text))
+  
 this.setState(prevState => ({
     movies: [...prevState.movies.slice(0, index), ...prevState.movies.slice(index + 1)]
 }))
@@ -46,7 +54,7 @@ return (
                 onClick={(event) => {
                     event.stopPropagation();
                     event.preventDefault();
-                    this.deleteCard(index);
+                    this.deleteCard(index, data);
                 }}>X</span>
                 <h3>{data.name}</h3>
                 <p>Genre: {data.genre}</p>

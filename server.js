@@ -3,6 +3,7 @@ const next = require('next')
 const fs = require("fs")
 
 const movies = require("./api/movieFunction.js")
+const deleteMovie = require("./api/deleteMovie.js")
 
 let obj = require("./api/movielistJSON.json")
 const dev = process.env.NODE_ENV !== 'production'
@@ -33,7 +34,7 @@ server.get('/api/movies', (req, res) => {
     res.send(JSON.stringify(filteredMovies));
 })
 
-//Add movie to list page
+//Add movie to list page - behövs denna??
 server.get('/addmovie', (req, res) => {
     // console.log(req.url);
     const page = "/addmovie";
@@ -53,12 +54,27 @@ server.post("/addmovie/newmovie", (req, res) => {
             newMovieList.push(JSON.parse(jsonString));
             
             fs.writeFile("./api/movielistJSON.json", JSON.stringify(newMovieList), () => {
-                console.log("Done");
+                console.log("Done, movie added");
             })
             res.send(JSON.parse(jsonString))
         });
     }
-    
+})
+
+//remove movie from db
+server.get("/api/delete", (req, res) => {
+    // console.log(req.url)
+    let name = req.query.name;
+    // console.log(name);
+
+    let removeMovieFromFile = deleteMovie.removeMovie(name);
+    // console.log(removeMovieFromFile)
+
+    fs.writeFile("./api/movielistJSON.json", JSON.stringify(removeMovieFromFile), () => {
+        console.log("Removed from DB");
+    })
+
+    res.send("Removed from database");
 })
 
 server.get('*', (req, res) => {

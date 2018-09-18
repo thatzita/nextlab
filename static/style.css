@@ -34,7 +34,7 @@ color:white;
       position: absolute;
       top:30px;
       color: white;
-      text-shadow: 0 0 40px black ;
+      text-shadow: 0 0 20px black,0 0 20px black ;
       left:0;
       right: 0;
       text-align: center;
@@ -78,19 +78,50 @@ color:white;
      .searchDiv{
        display: flex;
        justify-content: center;
+       align-items: center;
+       flex-direction: row;
        position: relative;
-       top:-30px;
+       top:-50px;
 
      }
      .inputStyle{
        width:30%;
        -webkit-clip-path: polygon(7% 0, 94% 0, 100% 100%, 0% 100%);
  clip-path: polygon(7% 0, 94% 0, 100% 100%, 0% 100%);
-       height: 30px;
+       height: 45px;
        border:none;
-       border-top: 5px solid black;
+       font-size: 1.2em;
+       -webkit-border-top-left-radius: 70px;
+       -webkit-border-top-right-radius: 70px;
+       -moz-border-radius-topleft: 70px;
+       -moz-border-radius-topright: 70px;
+       border-top-left-radius: 70px;
+       border-top-right-radius: 70px;
+              border-top: 5px solid black;
         text-align: center;
      }
+
+     .searchBtnDiv{
+          width: 50px;
+          position: absolute;
+          top:-90px;
+          margin-left: 180px;
+     }
+
+      .searchBtnDiv span{
+        position: absolute;
+        font-size: 1em;
+        top:70px;
+        color:white;
+        text-shadow: 0 0  10px  black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+        z-index: 3;
+        font-family: 'Press Start 2P', cursive;
+
+      }
+
+      .searchBtnDiv img {
+        transform: rotate(20deg);
+      }
    /* .searchDiv{
     display:flex;
     justify-content:left;

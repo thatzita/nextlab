@@ -14,7 +14,7 @@ function queryMoviesInfo(genre, rating,text, fs){
     }else if(genre !== undefined && rating === undefined){
        return filterMoviesByGenre(genre,rating,text, fs);
     }else if(genre === undefined && rating !== undefined){
-
+        console.log("rating")
         return filterMoviesByRating(genre,rating,text,fs);
     }else{
 
@@ -49,12 +49,15 @@ function filterMoviesByGenreAndRating(genre, rating, text, fs){
 
     genreList.forEach(function(data){
       let name = data.name.toUpperCase();
-      let texten = text.toUpperCase();
+      let texten = "";
         if(text === undefined){
           if(data.rating >= rating){
             filtered.push(data);
           }
         }else{
+
+          texten = text.toUpperCase();
+
           if(data.rating >= rating && name.includes(texten)){
             filtered.push(data);
 
@@ -76,7 +79,7 @@ function filterMoviesByGenre(genre, rating,text, fs){
 
     obj.forEach(function(data){
       let name = data.name.toUpperCase();
-      let texten = text.toUpperCase();
+      let texten = ""
 
         if(text === undefined){
 
@@ -90,6 +93,9 @@ function filterMoviesByGenre(genre, rating,text, fs){
             filtered.push(data);
           }
         }else{
+
+          texten = text.toUpperCase();
+
           console.log("texten är inte undefined " + texten)
           if(data.genre.length > 1){
             for(let i = 0; i < data.genre.length; i++){
@@ -116,13 +122,14 @@ function filterMoviesByRating(genre,rating,text, fs){
     obj.forEach(function(data){
 
         let name = data.name.toUpperCase();
-        let texten = text.toUpperCase();
+        let texten = ""
         if(text === undefined){
+
           if(data.rating >= rating){
               filtered.push(data);
           }
         }else{
-
+          texten = text.toUpperCase();
           if(name.includes(texten) && data.rating >= rating){
             filtered.push(data);
           }

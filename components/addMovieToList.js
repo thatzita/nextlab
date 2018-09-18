@@ -13,7 +13,7 @@ class AddMovieToList extends React.Component {
 
     commonChange(event) {
         let arr = [...this.state.genre];
-       
+
         // console.log("name: "+ event.target.name);
         // console.log("value: " + event.target.value)
         // console.log(event.target.name)
@@ -31,8 +31,8 @@ class AddMovieToList extends React.Component {
 
             let newArr = arr;
             let h,i,j;
-            
-            
+
+
             for(h = 0; h < arr.length; h++) {
                 let curGenre = arr[h];
                 let foundCount = 0;
@@ -44,11 +44,11 @@ class AddMovieToList extends React.Component {
                 if(foundCount > 1) {
                     // remove repeated item from new array
                     for(j = 0; j < newArr.length; j++) {
-                        if(newArr[j] == curGenre) {                
+                        if(newArr[j] == curGenre) {
                             newArr.splice(j, 1);
                             j--;
                         }
-                    }            
+                    }
                 }
             }
 
@@ -62,7 +62,7 @@ class AddMovieToList extends React.Component {
 
     submitMovie(data){
         console.log(this.state)
-     let postData = { 
+     let postData = {
         name: this.state.name,
         genre: [...this.state.genre],
         year: this.state.year,
@@ -76,8 +76,8 @@ class AddMovieToList extends React.Component {
           }).then(function(data) {
             console.log(data)
           });
-        
-        
+
+
     }
 
     render() {

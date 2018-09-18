@@ -39,7 +39,23 @@ this.setState(prevState => ({
 }))
 }
 
+newMovies(res){
+  console.log(res)
+  this.setState({
+    movies:res
+  })
+}
+
+
+componentDidUpdate(){
+
+
+
+}
+
 render() {
+console.log(this.props.movies)
+
 let movies = [];
 let movieData = [...this.state.movies];
 

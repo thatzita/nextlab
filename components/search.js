@@ -189,6 +189,9 @@ componentDidUpdate(){
   console.log(this.state.currentRate)
 
 }
+
+
+
  render(){
 
   let handleChange = event => {
@@ -205,14 +208,18 @@ componentDidUpdate(){
     //Om inget är ikryssat eller skrivit i sökfältet
     if (this.state.currentGenre === "nogenre" && this.state.currentRate === "any" && this.state.text === "") {
 
-      fetch(url).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(url).then(data => data.json()).then(res => {
+
+        this.props.getData(res)
+
+      }).catch(function (res) {
         console.log(res)
       })
 
       //Om de bara finns en currentRate ikryssad
     }else if (this.state.currentGenre === "nogenre" && this.state.text === "" ) {
 
-      fetch(urlMovies + "?rating=" + this.state.currentRate ).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?rating=" + this.state.currentRate ).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
 
@@ -220,32 +227,32 @@ componentDidUpdate(){
     } else if (this.state.currentRate === "any" && this.state.text === "") {
       console.log("hej")
       // console.log(urlMovies + "?genre=" + this.state.currentGenre)
-      fetch(urlMovies + "?genre=" + this.state.currentGenre).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?genre=" + this.state.currentGenre).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log("Felmeddelande " +res)
       })
       // Om bara sökfunktionen som är inskriven.
     } else if(this.state.currentRate === "any" && this.state.text !== "" && this.state.currentGenre === "nogenre"){
-      fetch(urlMovies + "?text=" + this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?text=" + this.state.text).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
       // Om bara sökfunktionen och rating finns med
     }else if(this.state.currentGenre === "nogenre" && this.state.text !== "" ){
-      fetch(urlMovies + "?rating=" + this.state.currentRate+ "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?rating=" + this.state.currentRate+ "&text="+this.state.text).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
       //Om bara sökfunktionen och genre finns med
     }else if(this.state.currentRate === "any" && this.state.text !== "" ){
 
-      fetch(urlMovies + "?genre=" + this.state.currentGenre+ "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+ "&text="+this.state.text).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
       //Om alla finns med
     }else if(this.state.text === "" && this.state.currentRate !== "any" && this.state.currentGenre !== "nogenre"){
-      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
     }else if(this.state.text !== ""){
-      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate + "&text="+this.state.text).then(data => data.json()).then(res => console.log(res)).catch(function (res) {
+      fetch(urlMovies + "?genre=" + this.state.currentGenre+"&rating="+this.state.currentRate + "&text="+this.state.text).then(data => data.json()).then(res => this.props.getData(res)).catch(function (res) {
         console.log(res)
       })
     }

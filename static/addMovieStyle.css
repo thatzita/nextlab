@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Josefin+Slab|Jura|Press+Start+2P');
 
-body {
-    background-color: black;
-}
 
 .addContent {
     /* color: rgb(235, 235, 235); */
     text-align: center;
-    width: 99%;
+    /* width: 99%; */
+    height: 350px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
-    background-color:rgb(235, 235, 235);
+    /* background-color:rgb(235, 235, 235); */
     transition: all .2s ease-in-out;
     margin: 5px;
-    padding-bottom: 8vh;
-    top: 65%;
+    padding-bottom: 11vh;
+    /* top: 65%; */
+    color: white;
+    text-shadow: 0 0 20px black,0 0 20px black ;
 
 }
 .card {
@@ -29,23 +29,43 @@ body {
   .addContent:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
-/* .addContainer {
-    display: inline-block;
-    padding: 1vh;
-    margin: 0.5vh;
-    background-color: #af6060d7;
-    width: 100vh;
-    padding: 10px;
-} */
+.addContainer {
+    margin-top:15px;
+    margin-bottom: 20px;
+    /* background-color:rgb(235, 235, 235); */
+}
 .labelClass {
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     font-weight: 700;
+    
 }
 .checkboxes {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 10px;
 }
-.addMovieBtn {
+.searchBtnDiv{
+    width: 50px;
+    position: absolute;
+    top: 660px;
+    margin-left: 45%;
+    cursor: pointer;
+}
 
+.searchBtnDiv span{
+  position: absolute;
+  font-size: 1em;
+  top:70px;
+  left:19px;
+  color:white;
+  text-shadow: 0 0  10px  black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+  z-index: 3;
+  font-family: 'Press Start 2P', cursive;
+}
+.searchBtnDiv img {
+    transform: rotate(20deg);
+  }
+.checkboxFont {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
 }

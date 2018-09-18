@@ -95,12 +95,12 @@ class AddMovieToList extends React.Component {
             <div>
                 <label className={css.labelClass}>Genre</label><br />
                 <div className={css.checkboxes} onChange={this.commonChange}>
-                    <input type="checkbox" name="genre" value="action" /> Action
-                    <input type="checkbox" name="genre" value="comedy" /> Comedy
-                    <input type="checkbox" name="genre" value="horror" /> Horror
-                    <input type="checkbox" name="genre" value="drama" /> Drama
-                    <input type="checkbox" name="genre" value="thriller" /> Thriller
-                    <input type="checkbox" name="genre" value="animated" /> Animated
+                    <input type="checkbox" name="genre" value="action" /> <span className={css.checkboxFont}>Action</span>
+                    <input type="checkbox" name="genre" value="comedy" /> <span className={css.checkboxFont}>Comedy</span>
+                    <input type="checkbox" name="genre" value="horror" /> <span className={css.checkboxFont}>Horror</span><br/>
+                    <input type="checkbox" name="genre" value="drama" /> <span className={css.checkboxFont}>Drama</span>
+                    <input type="checkbox" name="genre" value="thriller" /> <span className={css.checkboxFont}>Thriller</span>
+                    <input type="checkbox" name="genre" value="animated" /> <span className={css.checkboxFont}>Animated</span>
                 </div>
             </div>
             <br />
@@ -121,9 +121,16 @@ class AddMovieToList extends React.Component {
                 </select>
             </div>
             <br />
-            <button value="Add movie" onClick={(event)=> {
+            <div className={css.searchBtnDiv} onClick={(event)=> {
                 this.submitMovie(event)
-                }}>Add movie</button>
+                }}>
+            <span>Add movie</span>
+           <img  src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn"/>
+           </div>
+           
+            {/* <button className={css.addMovieBtn} value="Add movie" onClick={(event)=> {
+                this.submitMovie(event)
+                }}>Add movie</button> */}
         </div>
     </div>
 </div>

@@ -265,9 +265,12 @@ componentDidUpdate(){
 
        <div className={css.searchDiv}>
 
-           <input className={css.inputStyle} onChange={handleChange} type="text"/>
-         <button className={css.searchBtn} onClick={handleClick}>Search</button>
 
+           <input className={css.inputStyle} onChange={handleChange} type="text"/>
+           <div className={css.searchBtnDiv} onClick={handleClick}>
+            <span>Search</span>
+           <img  src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn"/>
+           </div>
 
        </div>
 

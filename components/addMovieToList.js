@@ -5,6 +5,7 @@ class AddMovieToList extends React.Component {
         super(props);
         this.state = {
             name: "",
+            year: "",
             genre: [],
             rating: "",
         }
@@ -17,7 +18,7 @@ class AddMovieToList extends React.Component {
         // console.log("name: "+ event.target.name);
         // console.log("value: " + event.target.value)
         // console.log(event.target.name)
-        if(event.target.name === undefined){
+        if(event.target.name === undefined || event.target.name === ""){
             this.setState({
                 rating: event.target.value
             });
@@ -111,18 +112,18 @@ Add your favorite movie to the collection.
 </div>
 <br/>
     <label>Rating</label>
-    <select>
+    <select onClick={this.commonChange}>
         <option value="" defaultChecked>No Rating</option>
-        <option onClick={this.commonChange} value="1">1</option>
-        <option onClick={this.commonChange} value="2">2</option>
-        <option onClick={this.commonChange} value="3">3</option>
-        <option onClick={this.commonChange} value="4">4</option>
-        <option onClick={this.commonChange} value="5">5</option>
-        <option onClick={this.commonChange} value="6">6</option>
-        <option onClick={this.commonChange} value="7">7</option>
-        <option onClick={this.commonChange} value="8">8</option>
-        <option onClick={this.commonChange} value="9">9</option>
-        <option onClick={this.commonChange} value="10">10</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
     </select>
 
 <button  value="Add movie" onClick={(event) => {

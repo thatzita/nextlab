@@ -1,10 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Header from '../components/header'
-
 import css from "../static/style.css"
-
-
 
 
 import SearchAndList from "../components/searchandlist"
@@ -80,7 +77,7 @@ const Home = () => (
     `}</style>
 
   </div>
-  
+
 )
 
 export default Home

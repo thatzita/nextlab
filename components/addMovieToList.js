@@ -78,12 +78,7 @@ class AddMovieToList extends React.Component {
 
         return (
 <div>
-    <div className={css.card}>
-        <h1 className={css.title}>ADD MOVIE</h1>
-        <p className={css.description}>
-            Add your favorite movie to the collection.
-        </p>
-    </div>
+
     <div className={css.addContent}>
         <div className={css.addContainer}>
             <div>
@@ -93,13 +88,13 @@ class AddMovieToList extends React.Component {
             </div>
             <br />
             <div>
-                <label>Release Year</label><br />
+                <label className={css.labelClass}>Release Year</label><br />
                 <input type="text" id="mYear" name="year" placeholder="Release year" onChange={this.commonChange} />
             </div>
             <br />
             <div>
                 <label className={css.labelClass}>Genre</label><br />
-                <div onChange={this.commonChange}>
+                <div className={css.checkboxes} onChange={this.commonChange}>
                     <input type="checkbox" name="genre" value="action" /> Action
                     <input type="checkbox" name="genre" value="comedy" /> Comedy
                     <input type="checkbox" name="genre" value="horror" /> Horror

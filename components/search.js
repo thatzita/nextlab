@@ -260,15 +260,12 @@ componentDidUpdate(){
 
 
   return (
-     <div>
+     <div className={css.lookFoor}>
+
+
        <div className={css.searchDiv}>
-         <div className={css.searchDivChild1}>
-         </div>
-         <div className={css.searchDivChild2}>
-         </div>
-         <div className={css.inpDiv}>
+
            <input className={css.inputStyle} onChange={handleChange} type="text"/>
-         </div>
          <button className={css.searchBtn} onClick={handleClick}>Search</button>
 
 

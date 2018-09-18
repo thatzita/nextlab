@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Header from '../components/header'
 
+
 import SearchAndList from "../components/searchandlist"
 
 const Home = () => (
@@ -9,6 +10,8 @@ const Home = () => (
     <Header/>
     <SearchAndList/>
   </div>
+
+
 )
 
 export default Home

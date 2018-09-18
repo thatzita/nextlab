@@ -1,7 +1,9 @@
-body{
-    margin:0;
-   }
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Josefin+Slab|Jura|Press+Start+2P');
 
+  body{
+    margin:0;
+
+  }
    a {
     margin:0px;
     margin-left:20px;
@@ -10,13 +12,89 @@ body{
     text-decoration:none;
    }
 
-   /*
+    .header{
+      display: flex;
+      justify-content: left;
+      font-size: 3em;
+      height: 350px;
+      width: 100%;
+      position: relative;
+      border-bottom: 5px solid black;
+/* background: #494949; */
+background: url("https://images.unsplash.com/photo-1513704519535-f5c81aa78d0d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f60075252d3fd88dd65c486bb2f48602&auto=format&fit=crop&w=1050&q=80");
+  /* background: #4e709d; */
+  background-size: 100%;
+  background-position: 0 55%  ;
+  background-repeat: no-repeat;
+color:white;
+    }
+
+    #movietext{
+      margin: auto;
+      position: absolute;
+      top:30px;
+      color: white;
+      text-shadow: 0 0 40px black ;
+      left:0;
+      right: 0;
+      text-align: center;
+      letter-spacing: 10px;
+      font-family: 'Press Start 2P', cursive;
+
+    }
+
+    .home{
+      font-size: 0.6em;
+      box-shadow: 0 -5px 0px;
+      padding:20px;
+      margin-left: 20px;
+      border-radius: 100%;
+      position: absolute;
+      bottom:0;
+      cursor: pointer;
+    }
+
+    .plus{
+      position: absolute;
+      right: 0;
+      box-shadow: 0 -5px 0px;
+      border-radius: 100%;
+      margin-right: 20px;
+      bottom:0;
+      padding:20px;
+      font-size: 0.5em;
+    }
+  /*
     Search styles
    */
-   .searchDiv{
+
+     .lookFoor{
+       display:flex;
+       justify-content:center;
+      width:100%;
+      flex-direction: column;
+     }
+
+     .searchDiv{
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top:-30px;
+
+     }
+     .inputStyle{
+       width:30%;
+       -webkit-clip-path: polygon(7% 0, 94% 0, 100% 100%, 0% 100%);
+ clip-path: polygon(7% 0, 94% 0, 100% 100%, 0% 100%);
+       height: 30px;
+       border:none;
+       border-top: 5px solid black;
+        text-align: center;
+     }
+   /* .searchDiv{
     display:flex;
     justify-content:left;
-    margin-top:5px;
+    padding-top:100px;
    }
 
 
@@ -70,7 +148,7 @@ body{
       cursor:pointer;
       z-index:3;
 
-   }
+   } */
 
     /*
       categories search

@@ -49,7 +49,7 @@ color:white;
       margin-left: 20px;
       border-radius: 100%;
       position: absolute;
-      bottom:10px;
+      bottom:50px;
       cursor: pointer;
       z-index: 1;
       transition: box-shadow 0.3s;
@@ -62,7 +62,7 @@ color:white;
       box-shadow: 0 -5px 0px;
       border-radius: 100%;
       margin-right: 20px;
-      bottom:10px;
+      bottom:50px;
       padding:20px;
       font-size: 0.5em;
       cursor: pointer;
@@ -142,6 +142,26 @@ color:white;
         transform: rotate(16deg);
 
       }
+
+
+      #current{
+        position: absolute;
+        top:40px;
+        right:0;
+
+        height: 100px;
+        display: flex;
+        text-align: center;
+      }
+
+      #current div{
+        display: flex;
+        flex-direction: column;
+        line-height: 0;
+        padding:0;
+        margin:20px;
+      }
+
    /* .searchDiv{
     display:flex;
     justify-content:left;
@@ -217,20 +237,14 @@ color:white;
 
     }
 
-    .categories span{
-      margin: 0;
-      padding-top:20px;
-      cursor: pointer;
-      line-height: 0px;
-      border-top:5px solid white;
-    }
+
 
    /*
      genre search
    */
 
   .genre {
-    width:5%;
+    width:100px;
     height: 20px;
     padding: 10px;
     display: flex;
@@ -238,10 +252,34 @@ color:white;
     position: relative;
   }
 
+  .genre > div{
+    position: absolute;
+    top:-25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .genre div span{
+    padding:15px;
+  }
+
+  .genre > div span:first-child{
+    color:white;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Montserrat
+
+  }
+
   .genre:hover > ul{
     display: flex;
   }
 
+  .genre ul li{
+    padding-top:10px;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
 
 
   .genre ul {
@@ -256,21 +294,41 @@ color:white;
     padding:0;
   }
 
+
   .genre ul li:hover{
-    background: red;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+
   }
 
 /* Rating search
 */
 
   .rating{
-    width:5%;
+    width:100px;
     height: 20px;
     padding: 10px;
     display: flex;
     flex-direction: row;
     text-align: center;
     position: relative;
+  }
+
+  .rating > div{
+    position: absolute;
+    top:-25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rating div span{
+    padding:15px;
+  }
+
+  .rating div span:first-child{
+    color:white;
+    font-family: Montserrat
+
   }
 
   .rating:hover > ul{
@@ -282,20 +340,20 @@ color:white;
     display: none;
     position: absolute;
     top:40px;
-    left:10px;
-
+    left:0px;
+    justify-content: center;
     flex-direction: column;
     margin: 0;
     padding:0;
   }
 
   .rating ul li {
-      text-align: left;
-      padding: 0px 40px 0px;
+    padding-top: 10px;
+    font-size: 0.7em;
+    width:100px;
   }
 
   .rating ul li:hover{
-    background: red;
   }
 
    /* List styles

@@ -1,5 +1,5 @@
 import React from 'react'
-import css from "../static/addMovieStyle.css"
+import css from "../static/style.css"
 
 class AddMovieToList extends React.Component {
     constructor(props) {
@@ -95,7 +95,7 @@ class AddMovieToList extends React.Component {
             <div>
                 <div className={css.addContent}>
                     <form id="movieForm">
-                    <div className={css.searchBtnDiv} onClick={(event) => {
+                    <div className={css.addBtn} onClick={(event) => {
                         this.submitMovie(event)
                     }}>
                         <span>Add movie</span>

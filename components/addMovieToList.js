@@ -11,7 +11,6 @@ class AddMovieToList extends React.Component {
             rating: "",
         }
         this.commonChange = this.commonChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     commonChange(event) {

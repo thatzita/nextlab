@@ -64,6 +64,7 @@ class MovieList extends React.Component {
     return (
       <div className={css.movies}>
         <div>
+
           <ul>{movies.map((data, index) =>
             <li key={index} >
 
@@ -74,14 +75,13 @@ class MovieList extends React.Component {
               <p>Genre: {data.genre}</p>
               <p>Release year: {data.year}</p>
               <p><strong>Rating:</strong> {data.rating}</p>
-              <span
-                onClick={(event) => {
+
+              <img className={css.imgSpan} src="https://static.thenounproject.com/png/3058-200.png" alt=""  onClick={(event) => {
                   event.stopPropagation();
                   event.preventDefault();
                   this.deleteCard(index, data);
-                }}>
-                    x
-                </span>
+                }}/>
+
             </li>)}
           </ul>
         </div>

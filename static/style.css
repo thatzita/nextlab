@@ -22,16 +22,32 @@
      margin:auto;
      justify-content: center;
      width:90%;
+
      flex-wrap: wrap;
      font-family: Montserrat;
    }
 
    .movies ul li{
      width: 200px;
+     height: 500px;
      padding:10px;
      margin:20px;
-
+    position: relative;
    }
+
+   .movies .imgSpan {
+     width: 20px;
+     box-shadow: none;
+     display: block;
+     cursor: pointer;
+     position:absolute ;
+    bottom:0;
+    z-index: 2;
+    color:black;
+   }
+
+  
+
 
    .movies ul li img {
       width: 100%;
@@ -136,9 +152,9 @@ color:white;
      }
      .inputStyle{
        width:30%;
-
-       height: 80px;
-       padding: 0px;
+      cursor:pointer;
+       height: 70px;
+       padding: 20px;
 
        border:none;
        font-size: 1.2em;
@@ -334,7 +350,6 @@ color:white;
 
 
   .genre ul li:hover{
-    background: rgba(0,0,0,0.5);
     cursor: pointer;
 
   }

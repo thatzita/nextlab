@@ -1,1 +1,253 @@
-[{"name":"Deadpool","genre":[["comedy"],"action"],"year":2016,"rating":4,"img":"https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Snow White and the Seven Dwarfs","genre":["animated"],"year":1937,"rating":7,"img":"https://m.media-amazon.com/images/M/MV5BMTQwMzE2Mzc4M15BMl5BanBnXkFtZTcwMTE4NTc1Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Fantasia","genre":["animated"],"year":1940,"rating":2,"img":"https://m.media-amazon.com/images/M/MV5BOGE4ZDQ2YWUtYTIzNi00NTI0LTkxMjQtODBjZjE4NjkxNGI4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Beauty and the Beast","genre":["animated"],"year":1991,"rating":4,"img":"https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Toy Story","genre":["animated","comedy"],"year":1995,"rating":5,"img":"https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Spirited Away","genre":["animated"],"year":2001,"rating":8,"img":"https://m.media-amazon.com/images/M/MV5BOGJjNzZmMmUtMjljNC00ZjU5LWJiODQtZmEzZTU0MjBlNzgxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Psycho","genre":["horror"],"year":1960,"rating":9,"img":"https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Exorcist","genre":["horror"],"year":1973,"rating":10,"img":"https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Halloween","genre":["horror"],"year":1978,"rating":5,"img":"https://m.media-amazon.com/images/M/MV5BNzk1OGU2NmMtNTdhZC00NjdlLWE5YTMtZTQ0MGExZTQzOGQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Shining","genre":["horror"],"year":1980,"rating":9,"img":"https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Sixth Sense","genre":["horror"],"year":1999,"rating":4,"img":"https://m.media-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Duck Soup","genre":["comedy"],"year":1933,"rating":2,"img":"https://m.media-amazon.com/images/M/MV5BYmYxZGU2NWYtNzQxZS00NmEyLWIzN2YtMDk5MWM0ODc5ZTE4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Some Like It Hot","genre":["comedy"],"year":1959,"rating":1,"img":"https://m.media-amazon.com/images/M/MV5BNzAyOGIxYjAtMGY2NC00ZTgyLWIwMWEtYzY0OWQ4NDFjOTc5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Dr. Strangelove, Or:...","genre":["comedy"],"year":1964,"rating":4,"img":"https://m.media-amazon.com/images/M/MV5BZWI3ZTMxNjctMjdlNS00NmUwLWFiM2YtZDUyY2I3N2MxYTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Monty Python and the Holy Grail","genre":["comedy"],"year":1975,"rating":7,"img":"https://m.media-amazon.com/images/M/MV5BN2IyNTE4YzUtZWU0Mi00MGIwLTgyMmQtMzQ4YzQxYWNlYWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Airplane!","genre":["comedy"],"year":1980,"rating":8,"img":"https://m.media-amazon.com/images/M/MV5BZjA3YjdhMWEtYjc2Ni00YzVlLWI0MTUtMGZmNTJjNmU0Yzk2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Rear Window","genre":["thriller"],"year":1954,"rating":3,"img":"https://m.media-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR0,0,182,268_AL_.jpg"},{"name":"Vertigo","genre":["thriller"],"year":1958,"rating":1,"img":"https://m.media-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Jaws","genre":["thriller"],"year":1975,"rating":8,"img":"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Silence of the Lambs","genre":["thriller"],"year":1991,"rating":6,"img":"https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"No Country For Old Men","genre":["thriller"],"year":2007,"rating":9,"img":"https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg"},{"name":"Citizen Kane","genre":["drama"],"year":1941,"rating":5,"img":"https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"It's A Wonderful Life","genre":["drama"],"year":1946,"rating":10,"img":"https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UY268_CR1,0,182,268_AL_.jpg"},{"name":"All About Eve","genre":["drama"],"year":1950,"rating":1,"img":"https://m.media-amazon.com/images/M/MV5BMTY2MTAzODI5NV5BMl5BanBnXkFtZTgwMjM4NzQ0MjE@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"On The Waterfront","genre":["drama"],"year":1954,"rating":3,"img":"https://m.media-amazon.com/images/M/MV5BY2I0MWFiZDMtNWQyYy00Njk5LTk3MDktZjZjNTNmZmVkYjkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Shawshank Redemption","genre":["drama"],"year":1994,"rating":10,"img":"https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Godfather","genre":["drama"],"year":1972,"rating":9,"img":"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg"},{"name":"The Godfather: Part II","genre":["drama"],"year":1974,"rating":9,"img":"https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg"},{"name":"The Dark Knight","genre":["drama","action"],"year":2008,"rating":8,"img":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"Fight Club","genre":["drama"],"year":1999,"rating":8,"img":"https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"name":"The Usual Suspects","genre":["drama"],"year":1995,"rating":7,"img":"https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"}]
+[{
+  "name": "The Road Warrior",
+  "genre": ["action"],
+  "year": 1981,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BN2VlNjNhZWQtMTY2OC00Y2E1LWJkNGUtMDU4M2ViNzliMGYwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Aliens",
+  "genre": ["action"],
+  "year": 1986,
+  "rating": 10,
+  "img":"https://m.media-amazon.com/images/M/MV5BMTI5NDY2NDUwM15BMl5BanBnXkFtZTYwNzQxMTA3._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Die Hard",
+  "genre": ["action"],
+  "year": 1988,
+  "rating": 7,
+  "img":"https://m.media-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Terminator 2: Judgment Day",
+  "genre": ["action"],
+  "year": 1991,
+  "rating": 4,
+  "img":"https://m.media-amazon.com/images/M/MV5BN2FhOTQ2MmQtNTY0OC00NWYyLThjNjMtZmZiOTBmYTY4MmM2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY268_CR92,0,182,268_AL_.jpg"
+}, {
+  "name": "Casino Royale",
+  "genre": ["action"],
+  "year": 2006,
+  "rating": 6,
+  "img": "https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Shutter Island",
+  "genre": ["thriller", "action"],
+  "year": 2010,
+  "rating": 7,
+  "img": "https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Deadpool",
+  "genre": [
+    ["comedy"], "action"
+  ],
+  "year": 2016,
+  "rating": 4,
+  "img":"https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Snow White and the Seven Dwarfs",
+  "genre": ["animated"],
+  "year": 1937,
+  "rating": 7,
+  "img":"https://m.media-amazon.com/images/M/MV5BMTQwMzE2Mzc4M15BMl5BanBnXkFtZTcwMTE4NTc1Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Fantasia",
+  "genre": ["animated"],
+  "year": 1940,
+  "rating": 2,
+  "img":"https://m.media-amazon.com/images/M/MV5BOGE4ZDQ2YWUtYTIzNi00NTI0LTkxMjQtODBjZjE4NjkxNGI4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Beauty and the Beast",
+  "genre": ["animated"],
+  "year": 1991,
+  "rating": 4,
+  "img":"https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Toy Story",
+  "genre": ["animated", "comedy"],
+  "year": 1995,
+  "rating": 5,
+  "img": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Spirited Away",
+  "genre": ["animated"],
+  "year": 2001,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BOGJjNzZmMmUtMjljNC00ZjU5LWJiODQtZmEzZTU0MjBlNzgxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Psycho",
+  "genre": ["horror"],
+  "year": 1960,
+  "rating": 9,
+  "img": "https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "The Exorcist",
+  "genre": ["horror"],
+  "year": 1973,
+  "rating": 10,
+  "img":"https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "Halloween",
+  "genre": ["horror"],
+  "year": 1978,
+  "rating": 5,
+  "img": "https://m.media-amazon.com/images/M/MV5BNzk1OGU2NmMtNTdhZC00NjdlLWE5YTMtZTQ0MGExZTQzOGQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "The Shining",
+  "genre": ["horror"],
+  "year": 1980,
+  "rating": 9,
+  "img":"https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+}, {
+  "name": "The Sixth Sense",
+  "genre": ["horror"],
+  "year": 1999,
+  "rating": 4,
+  "img":"https://m.media-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Duck Soup",
+  "genre": ["comedy"],
+  "year": 1933,
+  "rating": 2,
+  "img":"https://m.media-amazon.com/images/M/MV5BYmYxZGU2NWYtNzQxZS00NmEyLWIzN2YtMDk5MWM0ODc5ZTE4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Some Like It Hot",
+  "genre": ["comedy"],
+  "year": 1959,
+  "rating": 1,
+  "img":"https://m.media-amazon.com/images/M/MV5BNzAyOGIxYjAtMGY2NC00ZTgyLWIwMWEtYzY0OWQ4NDFjOTc5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Dr. Strangelove, Or:...",
+  "genre": ["comedy"],
+  "year": 1964,
+  "rating": 4,
+  "img":"https://m.media-amazon.com/images/M/MV5BZWI3ZTMxNjctMjdlNS00NmUwLWFiM2YtZDUyY2I3N2MxYTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Monty Python and the Holy Grail",
+  "genre": ["comedy"],
+  "year": 1975,
+  "rating": 7,
+  "img":"https://m.media-amazon.com/images/M/MV5BN2IyNTE4YzUtZWU0Mi00MGIwLTgyMmQtMzQ4YzQxYWNlYWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Airplane!",
+  "genre": ["comedy"],
+  "year": 1980,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BZjA3YjdhMWEtYjc2Ni00YzVlLWI0MTUtMGZmNTJjNmU0Yzk2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Rear Window",
+  "genre": ["thriller"],
+  "year": 1954,
+  "rating": 3,
+  "img":"https://m.media-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Vertigo",
+  "genre": ["thriller"],
+  "year": 1958,
+  "rating": 1,
+  "img":"https://m.media-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Jaws",
+  "genre": ["thriller"],
+  "year": 1975,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Silence of the Lambs",
+  "genre": ["thriller"],
+  "year": 1991,
+  "rating": 6,
+  "img":"https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "No Country For Old Men",
+  "genre": ["thriller"],
+  "year": 2007,
+  "rating": 9,
+  "img":"https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Citizen Kane",
+  "genre": ["drama"],
+  "year": 1941,
+  "rating": 5,
+  "img":"https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "It's A Wonderful Life",
+  "genre": ["drama"],
+  "year": 1946,
+  "rating": 10,
+  "img":"https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UY268_CR1,0,182,268_AL_.jpg"
+
+}, {
+  "name": "All About Eve",
+  "genre": ["drama"],
+  "year": 1950,
+  "rating": 1,
+  "img":"https://m.media-amazon.com/images/M/MV5BMTY2MTAzODI5NV5BMl5BanBnXkFtZTgwMjM4NzQ0MjE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "On The Waterfront",
+  "genre": ["drama"],
+  "year": 1954,
+  "rating": 3,
+  "img":"https://m.media-amazon.com/images/M/MV5BY2I0MWFiZDMtNWQyYy00Njk5LTk3MDktZjZjNTNmZmVkYjkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Shawshank Redemption",
+  "genre": ["drama"],
+  "year": 1994,
+  "rating": 10,
+  "img":"https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Godfather",
+  "genre": ["drama"],
+  "year": 1972,
+  "rating": 9,
+  "img":"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Godfather: Part II",
+  "genre": ["drama"],
+  "year": 1974,
+  "rating": 9,
+  "img":"https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Dark Knight",
+  "genre": ["drama", "action"],
+  "year": 2008,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Fight Club",
+  "genre": ["drama"],
+  "year": 1999,
+  "rating": 8,
+  "img":"https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "The Usual Suspects",
+  "genre": ["drama"],
+  "year": 1995,
+  "rating": 7,
+  "img":"https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}, {
+  "name": "Iron Sky",
+  "genre": ["action", "comedy"],
+  "year": 2021,
+  "rating": 1,
+  "img":"https://m.media-amazon.com/images/M/MV5BMTM2MDg5MzgxNF5BMl5BanBnXkFtZTcwODUzNjMxOA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+}]

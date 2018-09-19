@@ -13,9 +13,9 @@ class Search extends React.Component {
       text: "",
       genreClick:false,
       ratingClick:false,
-      currentGenre:"nogenre",
+      currentGenre:"Nogenre",
       changeCurrentGenre:false,
-      currentRate:"any",
+      currentRate:"Any",
     }
  }
 
@@ -102,32 +102,32 @@ currentRate(name){
 
 
    switch (name) {
-     case "action":
+     case "Action":
 
         this.currentGenre(name)
 
        break;
-    case "drama":
+    case "Drama":
 
         this.currentGenre(name)
 
       break;
-      case "animated":
+      case "Animated":
         this.currentGenre(name)
         break;
-    case "thriller":
+    case "Thriller":
         this.currentGenre(name)
 
       break;
-      case "horror":
+      case "Horror":
      this.currentGenre(name)
 
    break;
-    case "comedy":
+    case "Comedy":
         this.currentGenre(name)
 
       break;
-    case "nogenre":
+    case "Nogenre":
       this.currentGenre(name)
       break;
      default:
@@ -139,7 +139,7 @@ currentRate(name){
 addRate(name){
 
         switch (name) {
-        case "any":
+        case "Any":
 
           this.currentRate(name)
 
@@ -268,46 +268,51 @@ componentDidUpdate(){
 
            <input className={css.inputStyle} onChange={handleChange} placeholder="Search" type="text"/>
            <div className={css.searchBtnDiv} onClick={handleClick}>
-            <span>Search</span>
-           <img  src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn"/>
+              <span>Search</span>
+              <img  src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn"/>
            </div>
+
 
        </div>
 
+
+
        <div className={css.categories}>
          <div className={css.genre}>
-
-         <span  onClick={e => this.genreClick()}>Genre</span>
+          <div>
+            <span>{this.state.currentGenre}</span>
+            <span  onClick={e => this.genreClick()}>Genre</span>
+          </div>
          {this.state.genreClick ?
            <ul>
                   <form>
-                  <li onClick={e=>this.addGenre("nogenre")}>
-                    <label htmlFor="nogenre">No genre</label>
-                    <input type="radio" id="nogenre"  defaultChecked name="selection"/>
+                  <li onClick={e=>this.addGenre("Nogenre")}>
+                    <input className="genreAndRatingInp" type="radio" id="nogenre"  defaultChecked name="selection"/>
+                    <label className="genreAndRatingInp" htmlFor="nogenre">No genre</label>
                   </li>
-                 <li onClick={e=>this.addGenre("action")}>
-                   <label htmlFor="action">Action</label>
-                   <input type="radio" id="action" name="selection"/>
+                 <li onClick={e=>this.addGenre("Action")}>
+                   <input className="genreAndRatingInp" type="radio" id="action" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="action">Action</label>
                  </li>
-                 <li onClick={e=>this.addGenre("drama")}>
-                   <label htmlFor="drama" >Drama</label>
-                   <input type="radio" id="drama" name="selection"/>
+                 <li onClick={e=>this.addGenre("Drama")}>
+                   <input className="genreAndRatingInp" type="radio" id="drama" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="drama" >Drama</label>
                  </li>
-                 <li onClick={e=>this.addGenre("animated")}>
-                   <label htmlFor="animation">Animation</label>
-                   <input type="radio" id="animation" name="selection"/>
+                 <li onClick={e=>this.addGenre("Animated")}>
+                   <input className="genreAndRatingInp" type="radio" id="animation" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="animation">Animation</label>
                  </li>
-                 <li onClick={e=>this.addGenre("thriller")}>
-                   <label htmlFor="thriller">Thriller</label>
-                   <input type="radio" id="thriller" name="selection"/>
+                 <li onClick={e=>this.addGenre("Thriller")}>
+                   <input className="genreAndRatingInp" type="radio" id="thriller" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="thriller">Thriller</label>
                  </li>
-                 <li onClick={e=>this.addGenre("comedy")}>
-                   <label htmlFor="comedy">Comedy</label>
-                   <input type="radio" id="comedy" name="selection"/>
+                 <li onClick={e=>this.addGenre("Comedy")}>
+                   <input className="genreAndRatingInp" type="radio" id="comedy" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="comedy">Comedy</label>
                  </li>
-                 <li onClick={e=>this.addGenre("horror")}>
-                   <label htmlFor="horror">Horror</label>
-                   <input type="radio" id="horror" name="selection"/>
+                 <li onClick={e=>this.addGenre("Horror")}>
+                   <input className="genreAndRatingInp" type="radio" id="horror" name="selection"/>
+                   <label className="genreAndRatingInp" htmlFor="horror">Horror</label>
                  </li>
                  </form>
                 </ul>
@@ -320,12 +325,15 @@ componentDidUpdate(){
          </div>
 
          <div className={css.rating} >
-         <span onClick={e => this.ratingClick()}>Rating</span>
+          <div>
+            <span>{this.state.currentRate}</span>
 
+            <span onClick={e => this.ratingClick()}>Rating</span>
+          </div>
          {this.state.ratingClick ?
            <ul>
             <form>
-              <li  onClick={e=>this.addRate("any")}>
+              <li  onClick={e=>this.addRate("Any")}>
                 <label htmlFor="noRate">Any</label>
                 <input type="radio" id="noRate"  defaultChecked name="selection"/>
                 </li>

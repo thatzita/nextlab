@@ -6,7 +6,7 @@
     text-align: center;
     /* width: 99%; */
     height: 350px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    /* box-shadow: 0 1px 2px 0 rgba(0,0,0,.15); */
     /* background-color:rgb(235, 235, 235); */
     transition: all .2s ease-in-out;
     margin: 5px;
@@ -26,13 +26,21 @@
     margin-bottom: 50px;
     transition: all .2s ease-in-out;
   }
-  .addContent:hover {
+  /* .addContent:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
+  } */
 .addContainer {
+    padding: 20px;
     margin-top:15px;
     margin-bottom: 20px;
-    /* background-color:rgb(235, 235, 235); */
+    background-color:rgb(216, 214, 214);
+    display: inline-block;
+    width: 50%;
+    height: 430px;
+    position: relative;
+}
+.addContainer:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .labelClass {
     font-family: 'Press Start 2P', cursive;
@@ -47,8 +55,8 @@
 .searchBtnDiv{
     width: 50px;
     position: absolute;
-    top: 660px;
-    margin-left: 45%;
+    /* top: 660px; */
+    margin-left: 39%;
     cursor: pointer;
 }
 
@@ -69,3 +77,6 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
 }
+.searchBtnDiv img:hover {
+    transform: rotate(16deg);
+  }

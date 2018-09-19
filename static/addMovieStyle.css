@@ -12,8 +12,6 @@
     margin: 5px;
     padding-bottom: 11vh;
     /* top: 65%; */
-    color: white;
-    text-shadow: 0 0 20px black,0 0 20px black ;
 
 }
 .card {
@@ -30,17 +28,48 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   } */
 .addContainer {
-    padding: 20px;
-    margin-top:15px;
-    margin-bottom: 20px;
-    background-color:rgb(216, 214, 214);
-    display: inline-block;
     width: 50%;
     height: 500px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+.addContainer > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.addContainer > div{
+}
+
+.addContainer > div label{
+  width: 300px;
+  text-align: left;
+}
+
+.addContainer > div input{
+  width :300px;
+  padding:10px;
+}
+
+#displayGenre, #displayRating{
+  margin-top:20px;
+  flex-direction: column;
+justify-content: center;}
+
+#displayGenre label, #displayRating label{
+  text-align: center;
+}
+
+#displayGenre input{
+  width:15px;
 }
 .addContainer:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .labelClass {
     font-family: 'Press Start 2P', cursive;
@@ -53,24 +82,27 @@
     padding: 10px;
 }
 .searchBtnDiv{
-    width: 50px;
+    width: 20px;
+    left:0;
+    right: 0;
+    top:280px;
     position: absolute;
-    /* top: 660px; */
-    margin-left: 39%;
     cursor: pointer;
+    margin:auto;
+  margin-top: 20px;
 }
 
 .searchBtnDiv span{
   position: absolute;
   font-size: 1em;
-  top:70px;
-  left:19px;
   color:white;
   text-shadow: 0 0  10px  black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
   z-index: 3;
   font-family: 'Press Start 2P', cursive;
 }
 .searchBtnDiv img {
+    width: 100px;
+
     transform: rotate(20deg);
   }
 .checkboxFont {

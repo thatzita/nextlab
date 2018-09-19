@@ -15,14 +15,14 @@ class AddMovieToList extends React.Component {
     }
 
     commonChange(event) {
-
         let arr = [...this.state.genre];
 
-        if (event.target.name === undefined || event.target.name === "") {
-            this.setState({
-                rating: event.target.value
-            });
-        } else if (event.target.name === "genre") {
+        // if (event.target.name === undefined || event.target.name === "") {
+        //     this.setState({
+        //         rating: event.target.value
+        //     });
+        // } else
+         if (event.target.name === "genre") {
             arr.push(event.target.value);
             this.setState({
                 genre: arr
@@ -64,7 +64,7 @@ class AddMovieToList extends React.Component {
                 genre: [...this.state.genre],
                 year: this.state.year,
                 rating: this.state.rating,
-                img: "http://u.cubeupload.com/Masswap/475noposter.jpg"    
+                img: "http://u.cubeupload.com/Masswap/475noposter.jpg"
             }
         }else{
             postData = {
@@ -75,7 +75,7 @@ class AddMovieToList extends React.Component {
                 img: this.state.img
             }
         }
-        
+
 
 
 
@@ -95,25 +95,30 @@ class AddMovieToList extends React.Component {
             <div>
                 <div className={css.addContent}>
                     <form id="movieForm">
+                    <div className={css.searchBtnDiv} onClick={(event) => {
+                        this.submitMovie(event)
+                    }}>
+                        <span>Add movie</span>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn" />
+                    </div>
                         <div className={css.addContainer}>
                             <div>
                                 <label className={css.labelClass}>Title</label>
-                                <br />
                                 <input type="text" id="mTitle" name="name" placeholder="Movie name..." onChange={this.commonChange} />
                             </div>
                             <br />
                             <div>
-                                <label className={css.labelClass}>Release Year</label><br />
+                                <label className={css.labelClass}>Release Year</label>
                                 <input type="text" id="mYear" name="year" placeholder="Release year" onChange={this.commonChange} />
                             </div>
                             <br />
                             <div>
-                                <label className={css.labelClass}>Poster</label><br />
+                                <label className={css.labelClass}>Poster</label>
                                 <input type="text" id="mImg" name="img" placeholder="Poster URL..." onChange={this.commonChange} />
                             </div>
                             <br />
-                            <div>
-                                <label className={css.labelClass}>Genre</label><br />
+                            <div id={css.displayGenre}>
+                                <label  className={css.labelClass}>Genre</label>
                                 <div className={css.checkboxes} onChange={this.commonChange}>
                                     <input type="checkbox" name="genre" value="action" /> <span className={css.checkboxFont}>Action</span>
                                     <input type="checkbox" name="genre" value="comedy" /> <span className={css.checkboxFont}>Comedy</span>
@@ -124,9 +129,9 @@ class AddMovieToList extends React.Component {
                                 </div>
                             </div>
                             <br />
-                            <div>
-                                <label className={css.labelClass}>Rating</label><br />
-                                <select onClick={this.commonChange}>
+                            <div id={css.displayRating}>
+                                <label  className={css.labelClass}>Rating</label><br />
+                                <select name="rating" onChange={this.commonChange}>
                                     <option value="" defaultChecked>No Rating</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -140,13 +145,7 @@ class AddMovieToList extends React.Component {
                                     <option value="10">10</option>
                                 </select>
                             </div>
-                            <br />
-                            <div className={css.searchBtnDiv} onClick={(event) => {
-                                this.submitMovie(event)
-                            }}>
-                                <span>Add movie</span>
-                                <img src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn" />
-                            </div>
+
                         </div>
                     </form>
                 </div>

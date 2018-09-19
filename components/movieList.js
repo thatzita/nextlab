@@ -63,6 +63,8 @@ class MovieList extends React.Component {
     }
     return (
       <div className={css.movies}>
+
+        {movies.length >0 ?
         <div>
 
           <ul>{movies.map((data, index) =>
@@ -85,7 +87,11 @@ class MovieList extends React.Component {
             </li>)}
           </ul>
         </div>
-
+        :
+        <div>
+            Nothing matched your search
+        </div>
+      }
 
       </div>
     )

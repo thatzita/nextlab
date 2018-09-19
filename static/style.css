@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Josefin+Slab|Jura|Montserrat|Press+Start+2P');
   body{
     margin:0;
-
+    font-family: Montserrat
   }
    a {
     margin:0px;
@@ -46,7 +46,7 @@
     color:black;
    }
 
-  
+
 
 
    .movies ul li img {
@@ -313,6 +313,10 @@ color:white;
     flex-direction: column;
   }
 
+  .genre > div span:last-child:hover, .rating > div span:last-child:hover{
+      cursor: pointer;
+  }
+
   .genre div span{
     padding:15px;
   }
@@ -324,15 +328,21 @@ color:white;
     font-family: Montserrat
 
   }
+  input:focus{
+    outline: none;
+  }
 
   .genre:hover > ul{
     display: flex;
+    margin-top: 20px;
+    z-index: 2;
+
   }
 
   .genre ul li{
-    padding-top:10px;
     font-size: 0.7em;
     cursor: pointer;
+    background: white;
   }
 
 
@@ -388,22 +398,35 @@ color:white;
     display: flex;
   }
 
+  .rating form {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding-bottom: 5px;
+    left:0;
+    top:40px;
+
+  }
+
   .rating ul {
     list-style: none;
     display: none;
     position: absolute;
-    top:40px;
-    left:0px;
+    width: 500px;
+    border-radius: 0 0 10px 10px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     padding:0;
+    background: white;
+    z-index: 2;
   }
 
   .rating ul li {
     padding-top: 10px;
+    padding:5px;
+
     font-size: 0.7em;
-    width:100px;
   }
 
   .rating ul li:hover{

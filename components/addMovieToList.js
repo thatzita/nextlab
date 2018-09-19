@@ -9,6 +9,7 @@ class AddMovieToList extends React.Component {
             year: "",
             genre: [],
             rating: "",
+            img: ""
         }
         this.commonChange = this.commonChange.bind(this);
     }
@@ -46,20 +47,37 @@ class AddMovieToList extends React.Component {
                     }
                 }
             }
-        } else {
+        }else {
             this.setState({
                 [event.target.name]: event.target.value
             });
         }
+
     }
 
     submitMovie(data) {
-        let postData = {
-            name: this.state.name,
-            genre: [...this.state.genre],
-            year: this.state.year,
-            rating: this.state.rating
-        };
+        let postData;
+
+        if(this.state.img === "" || this.state.img === undefined){
+            postData = {
+                name: this.state.name,
+                genre: [...this.state.genre],
+                year: this.state.year,
+                rating: this.state.rating,
+                img: "http://u.cubeupload.com/Masswap/475noposter.jpg"    
+            }
+        }else{
+            postData = {
+                name: this.state.name,
+                genre: [...this.state.genre],
+                year: this.state.year,
+                rating: this.state.rating,
+                img: this.state.img
+            }
+        }
+        
+
+
 
         fetch('http://localhost:3000/addmovie/newmovie', {
             method: 'post',
@@ -87,6 +105,11 @@ class AddMovieToList extends React.Component {
                             <div>
                                 <label className={css.labelClass}>Release Year</label><br />
                                 <input type="text" id="mYear" name="year" placeholder="Release year" onChange={this.commonChange} />
+                            </div>
+                            <br />
+                            <div>
+                                <label className={css.labelClass}>Poster</label><br />
+                                <input type="text" id="mImg" name="img" placeholder="Poster URL..." onChange={this.commonChange} />
                             </div>
                             <br />
                             <div>

@@ -1,4 +1,6 @@
 import React from 'react'
+import css from "../static/style.css";
+
 
 class MovieList extends React.Component {
   constructor(props) {
@@ -43,6 +45,10 @@ class MovieList extends React.Component {
     })
   }
 
+  showHighRes(){
+    // return "background : red";
+  }
+
   render() {
     let movies = [];
     let movieData = [...this.state.movies];
@@ -56,21 +62,26 @@ class MovieList extends React.Component {
       justifyContent: "center",
     }
     return (
-      <div style={style}>
-        <h2>Our top movies</h2>
+      <div className={css.movies}>
         <div>
           <ul>{movies.map((data, index) =>
-            <li key={index}>
+            <li key={index} >
+
+
+                <img src={data.img} alt="No image" />
+
+              <h3>{data.name}</h3>
+              <p>Genre: {data.genre}</p>
+              <p>Release year: {data.year}</p>
+              <p><strong>Rating:</strong> {data.rating}</p>
               <span
                 onClick={(event) => {
                   event.stopPropagation();
                   event.preventDefault();
                   this.deleteCard(index, data);
-                }}>X</span>
-              <h3>{data.name}</h3>
-              <p>Genre: {data.genre}</p>
-              <p>Release year: {data.year}</p>
-              <p><strong>Rating:</strong> {data.rating}</p>
+                }}>
+                    x
+                </span>
             </li>)}
           </ul>
         </div>

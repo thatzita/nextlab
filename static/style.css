@@ -11,6 +11,44 @@
     text-decoration:none;
    }
 
+   .movies{
+     display: flex;
+     justify-content: center;
+   }
+
+   .movies ul{
+     list-style: none;
+     display: flex;
+     margin:auto;
+     justify-content: center;
+     width:90%;
+     flex-wrap: wrap;
+     font-family: Montserrat;
+   }
+
+   .movies ul li{
+     width: 200px;
+     padding:10px;
+     margin:20px;
+
+   }
+
+   .movies ul li img {
+      width: 100%;
+      box-shadow: 0 0 20px;
+      transition: transform 0.4s;
+   }
+
+    .movies ul li img:hover{
+      transform: scale(1.1) rotate(3deg);
+      cursor: pointer;
+    }
+
+
+   .movies ul li h3{
+     text-align: center;
+   }
+
     .header{
       display: flex;
       justify-content: left;

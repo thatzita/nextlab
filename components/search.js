@@ -13,9 +13,9 @@ class Search extends React.Component {
       text: "",
       genreClick:false,
       ratingClick:false,
-      currentGenre:"Nogenre",
+      currentGenre:"nogenre",
       changeCurrentGenre:false,
-      currentRate:"Any",
+      currentRate:"any",
     }
  }
 
@@ -102,32 +102,32 @@ currentRate(name){
 
 
    switch (name) {
-     case "Action":
+     case "action":
 
         this.currentGenre(name)
 
        break;
-    case "Drama":
+    case "drama":
 
         this.currentGenre(name)
 
       break;
-      case "Animated":
+      case "animated":
         this.currentGenre(name)
         break;
-    case "Thriller":
+    case "thriller":
         this.currentGenre(name)
 
       break;
-      case "Horror":
+      case "horror":
      this.currentGenre(name)
 
    break;
-    case "Comedy":
+    case "comedy":
         this.currentGenre(name)
 
       break;
-    case "Nogenre":
+    case "nogenre":
       this.currentGenre(name)
       break;
      default:
@@ -139,7 +139,7 @@ currentRate(name){
 addRate(name){
 
         switch (name) {
-        case "Any":
+        case "any":
 
           this.currentRate(name)
 
@@ -286,31 +286,31 @@ componentDidUpdate(){
          {this.state.genreClick ?
            <ul>
                   <form>
-                  <li onClick={e=>this.addGenre("Nogenre")}>
+                  <li onClick={e=>this.addGenre("nogenre")}>
                     <input className="genreAndRatingInp" type="radio" id="nogenre"  defaultChecked name="selection"/>
                     <label className="genreAndRatingInp" htmlFor="nogenre">No genre</label>
                   </li>
-                 <li onClick={e=>this.addGenre("Action")}>
+                 <li onClick={e=>this.addGenre("action")}>
                    <input className="genreAndRatingInp" type="radio" id="action" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="action">Action</label>
                  </li>
-                 <li onClick={e=>this.addGenre("Drama")}>
+                 <li onClick={e=>this.addGenre("drama")}>
                    <input className="genreAndRatingInp" type="radio" id="drama" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="drama" >Drama</label>
                  </li>
-                 <li onClick={e=>this.addGenre("Animated")}>
+                 <li onClick={e=>this.addGenre("animated")}>
                    <input className="genreAndRatingInp" type="radio" id="animation" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="animation">Animation</label>
                  </li>
-                 <li onClick={e=>this.addGenre("Thriller")}>
+                 <li onClick={e=>this.addGenre("thriller")}>
                    <input className="genreAndRatingInp" type="radio" id="thriller" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="thriller">Thriller</label>
                  </li>
-                 <li onClick={e=>this.addGenre("Comedy")}>
+                 <li onClick={e=>this.addGenre("comedy")}>
                    <input className="genreAndRatingInp" type="radio" id="comedy" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="comedy">Comedy</label>
                  </li>
-                 <li onClick={e=>this.addGenre("Horror")}>
+                 <li onClick={e=>this.addGenre("horror")}>
                    <input className="genreAndRatingInp" type="radio" id="horror" name="selection"/>
                    <label className="genreAndRatingInp" htmlFor="horror">Horror</label>
                  </li>
@@ -333,7 +333,7 @@ componentDidUpdate(){
          {this.state.ratingClick ?
            <ul>
             <form>
-              <li  onClick={e=>this.addRate("Any")}>
+              <li  onClick={e=>this.addRate("any")}>
                 <label htmlFor="noRate">Any</label>
                 <input type="radio" id="noRate"  defaultChecked name="selection"/>
                 </li>

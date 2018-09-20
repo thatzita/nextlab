@@ -19,6 +19,7 @@ class SearchAndList extends React.Component {
      movies:res,
    })
    this.refs.movies.newMovies(res);
+   
  }
 
  render(){
@@ -26,7 +27,7 @@ class SearchAndList extends React.Component {
    return (
      <React.Fragment>
        <Search getData={this.getData}/>
-       <MovieList  movies={this.state.movies} ref="movies"/>
+       <MovieList  movies={this.state.movies} ref="movies" getData={this.getData}/>
      </React.Fragment>
    )
  }

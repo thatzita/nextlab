@@ -17,11 +17,6 @@ class AddMovieToList extends React.Component {
     commonChange(event) {
         let arr = [...this.state.genre];
 
-        // if (event.target.name === undefined || event.target.name === "") {
-        //     this.setState({
-        //         rating: event.target.value
-        //     });
-        // } else
          if (event.target.name === "genre") {
             arr.push(event.target.value);
             this.setState({

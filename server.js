@@ -69,6 +69,26 @@ server.post("/addmovie/newmovie", (req, res) => {
     }
 })
 
+server.post("/editmovie", (req, res) => {
+    if (req.method == 'POST') {
+        var jsonString = '';
+
+        req.on('data', function (data) {
+            jsonString += data;
+        });
+
+        req.on('end', function () {
+           let newMovieList = JSON.parse(jsonString);
+
+
+            fs.writeFile("./api/movielistJSON.json",JSON.stringify(newMovieList),  () => {
+                console.log("Done, movie changed");
+            })
+            res.send(jsonString)
+        });
+    }
+})
+
 //remove movie from db
 server.get("/api/delete", (req, res) => {
     // console.log(req.url)

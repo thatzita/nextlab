@@ -559,7 +559,7 @@ color:white;
       right: 0;
       bottom: 0;
       margin: auto;
-      background-color: rgba(0,0,0, 0.5);
+      background-color: rgba(0,0,0, 0.8);
       z-index: 10;
     }
     .popup_inner {
@@ -569,23 +569,41 @@ color:white;
       top: 15%;
       bottom: 15%;
       margin: auto;
-      background: white;
+      color:white;
     }
-  
-    /* .submitBtn {
-      
-    } */
-  /* .closeBtn {
 
-  } */
+     .submitBtn {
+        width:100px;
+       position: absolute;
+        left:0;
+        right:0;
+        top:-70px;
+        margin: auto;
+        cursor: pointer;
+      }
 
+      .submitBtn img {
+        width:100px;
+        margin:auto;
+        transform: rotate(20deg);
+      }
 
-
-
-
-
-
-
-
-
-
+      .submitBtn span {
+        font-family: 'Press Start 2P', cursive;
+        position: relative;
+        top:80px;
+        z-index: 2;
+        text-shadow: 0 0px 20px black, 0 0px 20px black, 0 0px 20px black;
+      }
+.closeBtn {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top:50px;
+  border:none;
+  background: black;
+  color:white;
+  border-radius: 5px;
+  padding:5px 10px;
+    margin:auto;
+  }

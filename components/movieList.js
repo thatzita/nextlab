@@ -260,23 +260,31 @@ class Popup extends React.Component {
     return (
       <div className={css.popup}>
         <div className={css.popup_inner}>
+
+
+          <div className={css.submitBtn} onClick={(event) => {
+              this.submitMovie(event)
+          }}>
+              <span>Update</span>
+              <img src="https://firebasestorage.googleapis.com/v0/b/jonathanjohansson-69096.appspot.com/o/popcorn.png?alt=media&token=74049f62-676d-481a-a5c5-afc53e4035f7" alt="popcorn" />
+          </div>
           <div className={css.addContent}>
             <form id="movieForm">
 
               <div className={css.addContainer}>
                 <div>
                   <label className={css.labelClass}>Title</label>
-                  <input type="text" id="mTitle" name="name" placeholder={this.props.chosenMovie.name} onChange={this.commonChange} />
+                  <input type="text" id="mTitle" name="name" value={this.props.chosenMovie.name} onChange={this.commonChange} />
                 </div>
                 <br />
                 <div>
                   <label className={css.labelClass}>Release Year</label>
-                  <input type="text" id="mYear" name="year" placeholder={this.props.chosenMovie.year} onChange={this.commonChange} />
+                  <input type="text" id="mYear" name="year" value={this.props.chosenMovie.year} onChange={this.commonChange} />
                 </div>
                 <br />
                 <div>
                   <label className={css.labelClass}>Poster</label>
-                  <input type="text" id="mImg" name="img" placeholder={this.props.chosenMovie.poster} onChange={this.commonChange} />
+                  <input type="text" id="mImg" name="img" value={this.props.chosenMovie.poster} onChange={this.commonChange} />
                 </div>
                 <br />
                 <div id={css.displayGenre}>
@@ -311,9 +319,7 @@ class Popup extends React.Component {
               </div>
             </form>
           </div>
-          <button className={css.submitBtn} onClick={(event) => {
-            this.submitMovie()
-          }}>Update</button>
+
           <button className={css.closeBtn} onClick={this.props.closePopup}>Close</button>
 
         </div>
